@@ -32,9 +32,15 @@
 
 //Hier fügst du deine Dateien hinzu
 //#include "chapters/01-einleitung.typ"
-#include "chapters/0_arbeitsplan.typ"
-#include "chapters/1_tabelle_arbeitsplan.typ"
-#include "chapters/2_feedback.typ"
+#include "chapters/1_einleitung.typ"
+#include "chapters/2_grundlagen.typ"
+#include "chapters/3_stand_der_technik.typ"
+#include "chapters/4_methodik.typ"
+#include "chapters/5_technische_analyse.typ"
+#include "chapters/6_wirtschaftliche_bewertung.typ"
+#include "chapters/7_fallstudie_beispielanwendung.typ"
+#include "chapters/8_diskussion.typ"
+#include "chapters/9_fazit_ausblick.typ"
 
 
 
