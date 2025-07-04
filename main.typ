@@ -1,4 +1,4 @@
-#import "@preview/supercharged-dhbw:3.4.1": *
+#import "lib/lib.typ": *
 #import "acronyms.typ": acronyms
 #import "appendix.typ": appendix
 
@@ -7,7 +7,7 @@
 #let abgabe-datum = datetime(day: 15, month: 9, year: 2025) // Das Abgabedatum
 
 #show: supercharged-dhbw.with(
-  title: "Untersuchung der technischen und wirtschaftlichen Einsatzmöglichkeiten und Potenziale flexibler Kupferschienen im Schaltschrankbau. Bewertung von Wirtschaftlichkeit, Normkonformität und Auswirkungen auf die Planungs- und Fertigungsprozesse. 
+  title: "Untersuchung der technischen und wirtschaftlichen Einsatzmöglichkeiten und Potenziale flexibler Kupferschienen im Schaltschrankbau.
 ",
   authors: (
     (name: "Lucas Weyland", student-id: "3306752", course: "TEL22AT1", course-of-studies: "Elektrotechnik", company:  (

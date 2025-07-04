@@ -1,5 +1,5 @@
 #include "../acronyms.typ"
-#import "@preview/supercharged-dhbw:3.4.1": *
+#import "../lib/lib.typ": *
 
 = Grundlagen <Grundlagen> 
 == Einführung in den Schaltschrankbau <EinführungSchaltschrankbau>
