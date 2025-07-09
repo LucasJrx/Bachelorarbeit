@@ -79,7 +79,7 @@
   math-numbering: "(1)",
   page-numbering: (preface: "I", main: "1 / 1", appendix: "a"),
   logo-left: image("../ABB_logo.svg"),
-  logo-right: none,
+  logo-right: image("dhbw.svg"),
   logo-size-ratio: "1:1",
   ignored-link-label-keys-for-highlighting: (),
   body,
@@ -274,7 +274,7 @@
             if (show-header-right-logo and logo-right != none) {
               set image(height: right-logo-height / 3)
               logo-right
-            } else {65
+            } else {65 
               none
             },
           )
@@ -367,6 +367,7 @@
   set par(leading: 0.65em)
 
   if (show-table-of-contents) {
+    //pagebreak()
     v(0em)
     outline(
       title: TABLE_OF_CONTENTS.at(language),

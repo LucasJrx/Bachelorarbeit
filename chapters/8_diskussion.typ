@@ -1,4 +1,3 @@
-#include "../acronyms.typ"
 #import "../lib/lib.typ": *
 
 = Diskussion <Diskussion>
