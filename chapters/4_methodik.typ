@@ -1,6 +1,7 @@
 #import "../lib/lib.typ": *
 
 = Methodik <Methodik>
+
 == Vorgehensweise zur Analyse<VorgehensweiseAnalyse>
 == Verwendete Softwaretools <VerwendeteSoftwaretools>
 == Kriterienkatalog für die Bewertung <KriterienkatalogBewertung>
@@ -10,7 +11,7 @@ Projekte zeichnen sich durch eine Vielzahl an Unsicherheiten aus, die sowohl auf
 Um die Bedeutung des Risikomanagements im Projektkontext angemessen einordnen zu können, ist zunächst eine begriffliche Klärung des Projektbegriffs erforderlich. Ein Projekt wird in der einschlägigen Fachliteratur als ein zielgerichtetes, einmaliges Vorhaben verstanden, das aus einer Menge abgestimmter und gesteuerter Tätigkeiten besteht und durchgeführt wird, um unter Berücksichtigung vorgegebener Rahmenbedingungen wie Zeit, Ressourcen und Qualität ein definiertes Ziel zu erreichen [19, S. 155 ff.]. In Übereinstimmung mit der Norm DIN 69901-5 ist ein Projekt zusätzlich durch die Einmaligkeit seiner Gesamtkonstellation gekennzeichnet [20, Kap. 3.44].
 Die Praxis zeigt, dass Projekte insbesondere dann gefährdet sind, wenn zu Beginn unklare Zieldefinitionen oder Kommunikationsdefizite bestehen. Unvollständig abgestimmte Anforderungen gelten dabei als einer der häufigsten Risikofaktoren bei der Projektinitialisierung [21].
 Vor diesem Hintergrund wird im Folgenden eine projektspezifische Risikoanalyse durchgeführt, die der systematischen Identifikation und Bewertung relevanter Risiken im Rahmen dieser Bachelorarbeit dient. Das Ziel ist es, potenzielle Störquellen frühzeitig zu erkennen und geeignete Maßnahmen zur Risikominderung abzuleiten. Die Vorgehensweise folgt einem dreistufigen Modell, das die Identifikation relevanter Projektrisiken, die Bewertung der Risiken anhand einer Risikomatrix und die Ableitung sowie Planung geeigneter Gegenmaßnahmen in Abhängigkeit vom ermittelten Risikopotenzial umfasst [22, Kap. 8.2].
-Die vollständige Übersicht der identifizierten Projektrisiken einschließlich ihrer Kategorisierung und Bewertung ist in Anhang B dokumentiert.
+Die vollständige Übersicht der identifizierten Projektrisiken einschließlich ihrer Kategorisierung und Bewertung ist in Anhang B dokumentiert. 
 
 === Risikoidentifikation
 
