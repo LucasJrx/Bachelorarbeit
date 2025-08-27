@@ -81,12 +81,12 @@ Kommunikation (ID 7 – REI: 3,6): Zur Reduzierung kommunikativer Reibungsverlus
 [23]     H. Kerzner, Project management: a systems approach to planning, scheduling, and controlling, Twelfth edition. Hoboken, New Jersey: Wiley, 2017.
 [24]     T. Admin, „Project Risk Analysis Formulas Explained“, Teamhub | Projects, Chat and Docs in a single platform. Zugegriffen: 29. Juni 2025. [Online]. Verfügbar unter: https://teamhub.com/blog/project-risk-analysis-formulas-explained/
 
-== Technische Analyse <TechnischeAnalyse>
+== Technische Bewertung <TechnischeBewertung>
 Neben der wirtschaftlichen Bewertung ist auch die technische Umsetzbarkeit der favorisierten Lösung von zentraler Bedeutung. Daher erfolgt im letzten Schritt eine technische Analyse, welche die Praxistauglichkeit und Integrationsfähigkeit der flexiblen Kupferschienen im bestehenden Schaltschrankbau bei ABB untersucht.
 
 Die Analyse umfasst dabei mehrere Dimensionen: Zum einen wird geprüft, inwieweit die neuen Komponenten mit den bestehenden Fertigungsprozessen, Maschinen und Montagesystemen kompatibel sind. Zum anderen werden mögliche technische Vorteile (z.B. geringerer Platzbedarf, einfachere Handhabung, optimierte Stromverteilung) sowie potenzielle Herausforderungen (z.B. Anschlussnormen, Langzeitverhalten, Zertifizierungsanforderungen) identifiziert.
 
-Darüber hinaus erfolgt eine Bewertung hinsichtlich Wartungsfreundlichkeit, Zuverlässigkeit und Lebensdauer der flexiblen Kupferschienen. Ziel dieser Analyse ist es, sicherzustellen, dass die gewählte technische Lösung nicht nur ökonomisch vorteilhaft, sondern auch langfristig funktional und betrieblich umsetzbar ist.
+Darüber hinaus erfolgt eine Bewertung hinsichtlich Wartungsfreundlichkeit, Zuverlässigkeit und Lebensdauer der flexiblen Kupferschienen. Ziel dieser Analyse ist es, sicherzustellen, dass die gewählte technische Lösung nicht nur wirtschaftlich vorteilhaft, sondern auch langfristig funktional und betrieblich umsetzbar ist.
 
 Diese ganzheitliche methodische Vorgehensweise stellt sicher, dass sowohl wirtschaftliche als auch technische Aspekte umfassend berücksichtigt werden und die finale Entscheidung auf einer fundierten, nachvollziehbaren Basis erfolgt.
 

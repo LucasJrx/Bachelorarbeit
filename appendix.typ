@@ -1,5 +1,7 @@
 #let appendix = [
 
+  #counter(figure.where(kind: image)).update(0)
+  #set figure(supplement: "Anhang")
 
   ==  ETO-Prozessdiagramm
     #figure( 

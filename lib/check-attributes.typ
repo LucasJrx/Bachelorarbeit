@@ -12,14 +12,17 @@
   show-acronyms,
   show-list-of-figures,
   show-list-of-tables,
+  show-list-of-appendix,
   show-code-snippets,
   show-abstract,
+  show-zusammenfassung,
   header,
   numbering-alignment,
   toc-depth,
   acronym-spacing,
   glossary-spacing,
   abstract,
+  zusammenfassung, 
   appendix,
   acronyms,
   university,
@@ -55,8 +58,10 @@
     show-declaration-of-authorship: show-declaration-of-authorship,
     show-list-of-figures: show-list-of-figures,
     show-list-of-tables: show-list-of-tables,
+    show-list-of-appendix: show-list-of-appendix,
     show-code-snippets: show-code-snippets,
     show-abstract: show-abstract,
+    show-zusammenfassung: show-zusammenfassung,
   )
 
   for (key, attribute) in boolean-attributes {

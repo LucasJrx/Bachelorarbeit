@@ -1,7 +1,8 @@
 #import "lib/lib.typ": *
 #import "acronyms.typ": acronyms
 #import "appendix.typ": appendix
-
+#import "abstract.typ": abstract
+#import "zusammenfassung.typ": zusammenfassung
 
 
 #let abgabe-datum = datetime(day: 15, month: 9, year: 2025) // Das Abgabedatum
@@ -25,7 +26,9 @@
   university-location: "Mannheim",
   university-short: "DHBW",
   processing_period: "23.06.2025 bis 15.09.2025", // the processing period is displayed on the title page
-  appendix: appendix, // the appendix is displayed on the title page
+  appendix: appendix,
+  abstract: abstract,
+  zusammenfassung: zusammenfassung, // the zusammenfassung is displayed on the title page
 
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )

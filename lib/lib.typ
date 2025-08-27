@@ -1,7 +1,7 @@
 #import "@preview/codelst:2.0.2": *
 #import "acronym-lib.typ": init-acronyms, print-acronyms, acr, acrpl, acrs, acrspl, acrl, acrlpl, acrf, acrfpl
 #import "glossary-lib.typ": init-glossary, print-glossary, gls
-#import "locale.typ": TABLE_OF_CONTENTS, LIST_OF_FIGURES, LIST_OF_TABLES, CODE_SNIPPETS, APPENDIX, REFERENCES, ACRONYMS
+#import "locale.typ": TABLE_OF_CONTENTS, LIST_OF_FIGURES, LIST_OF_TABLES, LIST_OF_APPENDIX, CODE_SNIPPETS, APPENDIX, REFERENCES, ACRONYMS
 #import "titlepage.typ": *
 #import "confidentiality-statement.typ": *
 #import "declaration-of-authorship.typ": *
@@ -51,12 +51,15 @@
   show-acronyms: true,
   show-list-of-figures: true,
   show-list-of-tables: true,
+  show-list-of-appendix: true,
   show-code-snippets: true,
   show-abstract: true,
+  show-zusammenfassung: true,
   numbering-alignment: center,
   toc-depth: 3,
   acronym-spacing: 5em,
   glossary-spacing: 1.5em,
+  zusammenfassung: none,
   abstract: none,
   appendix: none,
   acronyms: none,
@@ -101,12 +104,15 @@
     show-list-of-tables,
     show-code-snippets,
     show-abstract,
+    show-zusammenfassung,
+    show-list-of-appendix,
     header,
     numbering-alignment,
     toc-depth,
     acronym-spacing,
     glossary-spacing,
     abstract,
+    zusammenfassung,
     appendix,
     acronyms,
     university,
@@ -177,7 +183,6 @@
   }
 
   show heading.where(level: 1): it => {
-    pagebreak()
     v(0em) + it + v(1em)
   }
   show heading.where(level: 2): it => v(0em) + it + v(0.5em)
@@ -338,7 +343,7 @@
   }
 
   if (show-declaration-of-authorship) {
-    //pagebreak()
+    pagebreak()
     declaration-of-authorship(
       authors,
       title,
@@ -360,35 +365,40 @@
   set par(justify: true, leading: 1em)
 
   if (show-abstract and abstract != none) {
-    align(center + horizon, heading(level: 1, numbering: none, outlined: true)[Abstract])
+    pagebreak()
+    align( heading(level: 1, numbering: none, outlined: true)[Abstract])
     text(abstract)
+  }
+
+  if (show-zusammenfassung and zusammenfassung != none) {
+    align( heading(level: 1, numbering: none, outlined: true)[Zusammenfassung])
+    text(zusammenfassung)
   }
 
   set par(leading: 0.65em)
 
   if (show-table-of-contents) {
-    //pagebreak()
+    pagebreak()
     v(0em)
     outline(
-      title: TABLE_OF_CONTENTS.at(language),
       indent: auto,
       depth: toc-depth,
     )
   }
-
+  //Abbildung
   context {
-    let elems = query(figure.where(kind: image))
+    let elems = query(figure.where(supplement: [Abbildung]))
     let count = elems.len()
 
     if (show-list-of-figures and count > 0) {
       heading(level: 1, numbering: none, outlined: true)[#LIST_OF_FIGURES.at(language)]
       outline(
         title: none,
-        target: figure.where(kind: image),
+        target: figure.where(supplement: [Abbildung]),
       )
     }
   }
-
+  //Tabellen
   context {
     let elems = query(figure.where(kind: table))
     let count = elems.len()
@@ -472,8 +482,6 @@
 
   set page(
     // necessary to apply numbering in the table of contents
-    width: 420mm,
-    height: 297mm,
     margin: (top: 30mm, right: 25mm, bottom: 30mm, left: 25mm), // Seitenränder, Oberer Rand angepasst
     numbering: appendix-numbering,
     footer: context {
@@ -501,6 +509,21 @@
       style: bib-style,
     )
     bibliography
+  }
+
+
+// Anhangsverzeichnis
+  context {
+    let elems = query(figure.where(supplement: [Anhang]))
+    let count = elems.len()
+
+    if (show-list-of-appendix and count > 0) {
+      heading(level: 1, numbering: none, outlined: true)[#LIST_OF_APPENDIX.at(language)]
+      outline(
+        title: none,
+        target: figure.where(supplement: [Anhang]),
+      )
+    }
   }
 
   if (appendix != none) {

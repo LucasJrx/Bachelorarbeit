@@ -12,7 +12,6 @@
   date-format,
 ) = {
   let authors-by-city = authors.map(author => author.company.city).dedup()
-
   v(0em)
   heading(CONFIDENTIALITY_STATEMENT_TITLE.at(language), outlined: true, numbering: none)
   v(1em)

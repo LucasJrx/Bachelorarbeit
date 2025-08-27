@@ -2,6 +2,7 @@
 
 = Grundlagen <Grundlagen> 
 Die vorliegende Arbeit wird in der ABB AG am Standort Mannheim, innerhalb der Business Unit Motion in der Abteilung System Drives geschrieben. Die Abteilung ist spezialisiert auf die Entwicklung, Konstruktion und Fertigung von konfigurierten sowie kundenspezifisch ausgelegten Schaltschränken, in denen ausschließlich ABB-Module wie der DCS880 und DCT880 integriert werden. Bei diesen Modulen handelt es sich um leistungsfähige Gleichrichter, die mittels Thyristortechnologie Gleichstrom erzeugen. Die gefertigten Schaltschränke sind für die zuverlässige Energieverteilung und die präzise Steuerung von Motoren und industriellen Anlagen konzipiert und erfüllen hohe Anforderungen hinsichtlich Funktionalität, Sicherheit und Systemintegration.
+
 == Einführung in den Schaltschrankbau <EinführungSchaltschrankbau>
 
 Ein Schaltschrank besteht aus mehreren systematisch integrierten Komponenten, die in der industriellen Fertigung zu einer funktionalen Einheit zusammengefügt werden. Das tragende Grundgerüst bildet eine Konstruktion aus C-Profilen, die je nach den zu erwartenden Betriebsströmen aus Stahl oder Edelstahl gefertigt werden, damit diese C-Profile nicht durch die Induktion überhitzen. Diese Profilkonstruktion nimmt Bodenbleche und zusätzliche C-Profile auf, welche als Trägerstruktur für die Montageplatte mit den elektrischen Komponenten fungieren.
@@ -61,85 +62,31 @@ Zusammengefasst sind Kupferschienen im DC-Schaltschrankbau unverzichtbare Kompon
 
 == Unterschied zwischen starren und flexiblen Kupferschienen <UnterschiedStarrFlexibel>
 
-#figure(
-  table(
-    columns: 3,
-    stroke: 0.5pt,
-    align: left,
-    [*Merkmal*], [*Starre Kupferschiene*], [*Flexible Kupferschiene*],
-    [Aufbau], [Massives Kupfer], [Mehrlagige Kupferlamellen],
-    [Biegeradius], [Gering], [Hoch],
-    [Stromtragfähigkeit], [Hoch], [Etwas geringer],
-    [Montageaufwand], [Höher], [Geringer],
-    [Einsatzgebiet], [Feste Installationen], [Bewegliche/enge Räume],
-  ),
-  caption: [Vergleich zwischen starren und flexiblen Kupferschienen]
-)
+Der Unterschied zwischen starren und flexiblen Kupferschienen liegt im Wesentlichen in ihrer Bauweise, Anwendungsflexibilität sowie in den mechanischen Eigenschaften.
 
-*ABB* bietet beide Varianten an, wobei flexible Schienen besonders bei beengten Platzverhältnissen oder bei Schwingungsbelastung Vorteile bieten [3](https://library.e.abb.com/public/edc51e83d85231d8c1257845002a4a8f/2CDC400027D0101.pdf) [4](https://library.e.abb.com/public/ba1eb1dbd9d343358475ca96be0ff15c/Brosch_Schaltungsempfehlungen_9AKK107492A1719_DE_web.pdf).
+Starre Kupferschienen bestehen aus massiven, fest geformten Profilen, die in der Regel durch Extrusion oder Laserbearbeitung aus Kupfer gefertigt werden. Sie zeichnen sich durch eine hohe mechanische Stabilität aus und eignen sich insbesondere für gerade Verbindungen. Aufgrund ihres geringen elektrischen Widerstands sind sie besonders für hohe Strombelastungen prädestiniert und gewährleisten eine zuverlässige elektrische Kontaktierung.
 
-[4](https://library.e.abb.com/public/ba1eb1dbd9d343358475ca96be0ff15c/Brosch_Schaltungsempfehlungen_9AKK107492A1719_DE_web.pdf): [Kinto Power Connect – Vergleich flexibler/starrer Sammelschienen](https://www.kintopowerconnect.com/de/blog/What-is-the-difference-between-flexible-and-rigid-busbars)
+Flexible Kupferschienen unterscheiden sich in ihrem Aufbau deutlich von den starren Varianten. Eine Bauform besteht aus mehreren dünnen Kupferlamellen, die übereinander angeordnet und zur mechanischen Fixierung mit einer Isolationsschicht ummantelt sind. Die Lamellen besitzen üblicherweise eine Stärke von 0,5 bis 1 mm je nach Anwendungsfall können bis zu zehn Lamellen kombiniert werden. Mit dieser Konstruktion lassen sich Querschnitte von bis zu 1.200 mm² realisieren, was für die meisten industriellen Einsatzbereiche ausreichend ist.
+
+Eine weitere Ausführung flexibler Kupferschienen basiert auf verflochtenen Kupferlitzen, die zu einem großflächigen Kupfergeflecht verarbeitet werden. Zur Formstabilität und elektrischen Sicherheit wird dieses Geflecht mit einer PVC-Ummantelung isoliert. Die Enden werden in der Regel durch ein Pressschweißverfahren abgeschlossen. Bei dieser Bauweise sind Querschnitte bis maximal 240 mm² üblich. Für höhere Querschnitte werden mehrlagige Kupfergeflechte eingesetzt, deren Enden mit Kabelschuhen verpresst werden. 
+
+Der wesentliche Unterschied zwischen starren und flexiblen Kupferschienen liegt in ihrem Aufbau sowie den daraus resultierenden Einsatzmöglichkeiten. Starre Kupferschienen sind bei großen Querschnitten nur schwer zu biegen und weisen dadurch eingeschränkte Einsatzmöglichkeiten auf. Verbindungen müssen in diesen Fällen häufig über Kabel oder zusätzliche Verbindungselemente realisiert werden. Allerdings können auch Kabel bei großen Querschnitten sehr steif werden, sodass die Handhabung und Installation zunehmend erschwert wird.
+
+Hierin liegt der entscheidende Vorteil flexibler Kupferschienen: Durch ihren Lamellenaufbau lassen sich deutlich engere Biegeradien sowie komplexe Geometrien umsetzen, was den Einsatzbereich wesentlich erweitert. Der Nachteil dieser Bauform besteht jedoch in den höheren Anschaffungskosten. Eine weitere Variante stellen Kupfergeflechte dar, die im Vergleich zu Kabeln gleichen Querschnitts nochmals flexibler sind und damit in Anwendungen mit besonderen Anforderungen an die Beweglichkeit oder Schwingungsdämpfung bevorzugt eingesetzt werden.
+
+Auf die detaillierten technischen Unterschiede und deren Auswirkungen auf Stromtragfähigkeit, Erwärmungsverhalten und mechanische Eigenschaften wird in @TechnischeAnalyse näher eingegangen.
 
 == Normative Anforderungen <NormativeAnforderungen>
 
-Im Schaltschrankbau spielen normative Anforderungen eine zentrale Rolle, um die Sicherheit, Funktionalität und internationale Marktfähigkeit elektrischer Anlagen zu gewährleisten. Zwei der wichtigsten Normensysteme in diesem Bereich sind die IEC-Normen (International Electrotechnical Commission) und die UL-Normen (Underwriters Laboratories), die jeweils unterschiedliche geografische und regulatorische Anforderungen abdecken.
+Im Schaltschrankbau spielen normative Anforderungen eine zentrale Rolle, um die Sicherheit, Funktionalität und internationale Marktfähigkeit elektrischer Anlagen zu gewährleisten. Die wichtigsten Normensysteme in diesem Bereich sind die IEC-Normen (International Electrotechnical Commission) und die UL-Normen (Underwriters Laboratories), die jeweils unterschiedliche geografische und regulatorische Anforderungen abdecken.
 
-Die IEC-Normen, insbesondere die IEC 60204-1 für die elektrische Ausrüstung von Maschinen und die IEC 61439 für Niederspannungs-Schaltgerätekombinationen, bilden den internationalen Standard für den Schaltschrankbau außerhalb Nordamerikas. Sie definieren grundlegende Sicherheitsanforderungen, lassen jedoch dem Hersteller Spielraum bei der technischen Umsetzung. Ziel ist es, ein hohes Maß an Sicherheit und Kompatibilität zu gewährleisten, ohne die Konstruktionsfreiheit unnötig einzuschränken. Die IEC-Normen sind in Europa weit verbreitet und bilden die Grundlage für die CE-Kennzeichnung.
+Die internationale Norm IEC 61800-5-1:2022 legt die sicherheitsrelevanten Anforderungen für elektrische Antriebssysteme mit variabler Drehzahl (Power Drive Systems, PDS) fest. Sie beschreibt die grundlegenden Schutzmaßnahmen, die erforderlich sind, um Personen und Anlagen im Betrieb wie auch im Fehlerfall zuverlässig vor Gefahren zu schützen. Der Anwendungsbereich umfasst sowohl Niederspannungs- als auch Hochspannungsantriebssysteme, die aus Leistungsteil, Steuerung und Motor bestehen.
 
-Im Gegensatz dazu sind die UL-Normen speziell auf die Anforderungen des nordamerikanischen Marktes zugeschnitten. Besonders relevant ist hier die UL 508A, die detaillierte Vorgaben für den Bau von industriellen Steuerschränken macht. UL-Normen sind deutlich strenger in der Auslegung und verlangen eine präzise Einhaltung der technischen Vorgaben. Dazu gehören unter anderem die Verwendung von UL-gelisteten oder -anerkannten Komponenten, die Einhaltung spezifischer Verdrahtungs- und Schutzmaßnahmen sowie regelmäßige Werksinspektionen durch UL-Prüfer. Änderungen an zertifizierten Produkten müssen vorab genehmigt werden, was eine hohe Planungssicherheit, aber auch einen erhöhten Dokumentationsaufwand mit sich bringt.
+Im Mittelpunkt der Norm stehen drei wesentliche Sicherheitsaspekte: elektrische, thermische und energiebezogene Gefährdungen. Auf elektrischer Ebene definiert die Norm Maßnahmen gegen den elektrischen Schlag, Anforderungen an Isolierung, Luft- und Kriechstrecken sowie Vorgaben für Schutzmechanismen bei Fehler- und Abnormalbedingungen. Im thermischen Bereich adressiert sie Risiken durch Überhitzung, Brandgefahr und die Begrenzung von zulässigen Temperaturanstiegen an Bauteilen, Leitern und berührbaren Oberflächen. Unter dem Aspekt der Energie betrachtet die Norm insbesondere Kurzschluss- und Überlastschutz, den Umgang mit gespeicherten Energien wie Kondensatoren sowie Schutzmaßnahmen gegen gefährliche Energiefreisetzungen. Darüber hinaus enthält die IEC 61800-5-1 Anforderungen an Gehäuse, Kühlung, Erdung, Verdrahtung, elektromagnetische Verträglichkeit sowie an die Kennzeichnung und Dokumentation. Damit stellt die Norm sicher, dass Antriebssysteme im Schaltschrankbau so ausgeführt werden, dass sie bei ordnungsgemäßer Installation und Wartung keine Gefahr für Personen oder Sachwerte darstellen.
 
-Ein wesentlicher Unterschied zwischen IEC und UL liegt also im Grad der Reglementierung: Während IEC-Normen eher prinzipienbasiert sind, verfolgen UL-Normen einen stark regelbasierten Ansatz. 
+Ergänzend dazu ist die IEC 61439-Reihe von zentraler Bedeutung, da sie die Anforderungen an Niederspannungs-Schaltgerätekombinationen festlegt. Diese Normserie befasst sich insbesondere mit der Dimensionierung von Schaltschränken, einschließlich der Strombelastbarkeit von Sammelschienen, der Kurzschlussfestigkeit, der Erwärmung und der erforderlichen Prüfungen zur Sicherstellung der Betriebssicherheit. Während die IEC 61800-5-1 den Fokus auf die Sicherheit der Antriebssysteme legt, stellt die IEC 61439 sicher, dass der gesamte Schaltschrank mechanisch und elektrisch korrekt ausgelegt ist und die eingesetzten Betriebsmittel unter realen Betriebsbedingungen zuverlässig zusammenwirken.
 
+Für den nordamerikanischen Markt ist zusätzlich die UL 508A Standard for Industrial Control Panels maßgeblich. Diese Norm definiert die sicherheitstechnischen Anforderungen an den Aufbau von industriellen Schaltschränken und Steuerungen. Sie regelt unter anderem die Auslegung von Stromschienen, Leiterquerschnitten und Schutzorganen sowie die Dimensionierung von Luft- und Kriechstrecken. Ein besonderer Schwerpunkt liegt dabei auf dem Schutz vor elektrischen Gefährdungen, der korrekten Absicherung gegen Kurzschluss und Überlast sowie auf den Anforderungen an die Erdung und den Berührungsschutz. Darüber hinaus enthält die UL 508A praxisnahe Vorgaben für den Aufbau, die Verdrahtung, die Dokumentation und die Kennzeichnung von Schaltschränken. Sie bildet damit die Grundlage für eine normgerechte und sichere Ausführung von Steuerungs- und Antriebssystemen für den nordamerikanischen Markt.
 
-
----
-
-Normative Anforderungen im Schaltschrankbau: IEC vs. UL
-
-Im internationalen Schaltschrankbau sind die Einhaltung normativer Anforderungen und die Auswahl der richtigen Normengrundlage entscheidend für Sicherheit, Zulassung und Marktzugang. Zwei der wichtigsten Normensysteme sind die *IEC-Normen* (International Electrotechnical Commission) und die *UL-Normen* (Underwriters Laboratories), die jeweils unterschiedliche geografische Märkte und technische Philosophien abdecken.
-
-IEC-Normen (z. B. IEC 61439)
-
-Die *IEC 61439* ist die zentrale Norm für Niederspannungs-Schaltgerätekombinationen im europäischen und internationalen Raum. Sie legt Anforderungen an die Konstruktion, Prüfung und Dokumentation von Schaltschränken fest. Dabei steht die *Systemprüfung* im Vordergrund: Der gesamte Schaltschrank wird als Einheit betrachtet und geprüft, was eine hohe Flexibilität bei der Auswahl von Komponenten erlaubt [1](https://krayer.de/ul-wissen/ul-blog/normen-im-schaltschrankbau-iec-ul-und-csa-normen-erklaert/).
-
-Ein weiterer Vorteil der IEC-Normen ist die *prinzipienbasierte Auslegung*: Der Hersteller hat mehr Freiheiten bei der technischen Umsetzung, solange die grundlegenden Sicherheitsanforderungen erfüllt sind. Dies ermöglicht eine wirtschaftlichere und anwendungsspezifischere Auslegung.
-
-🇺🇸 UL-Normen (z. B. UL 508A)
-
-Die *UL 508A* ist die maßgebliche Norm für industrielle Steuerschränke in den USA und Kanada. Sie verfolgt einen *regelbasierten Ansatz* mit sehr detaillierten Vorgaben zur Auswahl von Komponenten, Verdrahtung, Schutzmaßnahmen und Kennzeichnung. Nur *UL-gelistete oder -anerkannte Komponenten* dürfen verwendet werden, und es gelten strenge Anforderungen an die Dokumentation und regelmäßige Inspektionen [2](https://www.neumueller.com/de/knowledge/normen-richtlinien/unterschieduliec).
-
-Ein wesentlicher Unterschied zur IEC ist, dass bei UL die *Einzelkomponentenprüfung* im Vordergrund steht. Jeder Bestandteil muss separat zertifiziert sein, was die Planungssicherheit erhöht, aber auch den Aufwand und die Kosten steigert.
-
----
-
-Unterschiede bei Kupferschienen (Stromschienen)
-
-Ein besonders praxisrelevanter Unterschied zwischen IEC und UL betrifft die *Auslegung und Verwendung von Kupferschienen*:
-
-#figure(
-  table(
-    columns: 3,
-    stroke: 0.5pt,
-    align: left,
-    [*Aspekt*], [*IEC 61439*], [*UL 508A*],
-    [*Bemessungsstrom*], [Wird durch Erwärmungsprüfung oder Berechnung nach IEC-Tabellen ermittelt], [Muss durch Verwendung von UL-gelisteten Stromschienen oder durch Kurzschlussprüfung nachgewiesen werden [3](https://ww3.cad.de/foren/ubb/uploads/ME1/IEC_UL_e20001-a300-p301.pdf)],
-    [*Material*], [Kupfer oder Aluminium zulässig, sofern geprüft], [Nur UL-gelistete Materialien mit dokumentierter Strombelastbarkeit],
-    [*Abstände*], [Frei wählbar, solange Luft- und Kriechstrecken eingehalten werden], [Strikte Vorgaben zu Abständen, Befestigung und Isolierung],
-    [*Kennzeichnung*], [Nach IEC-Farbcodes (z. B. grün-gelb für PE)], [Nach NFPA 79 und UL-Farbvorgaben (z. B. grün für Erdung)],
-    [*Zulassung*], [Erlaubt individuelle Auslegung], [Nur vorgeprüfte Schienensysteme oder Einzelzulassung durch UL-Prüfung],
-  ),
-  caption: [Vergleich zwischen IEC 61439 und UL 508A Norm]
-)
-
-Die UL-Norm verlangt zudem, dass die Stromschienen in Bezug auf *Kurzschlussfestigkeit* und *Erwärmung* nach UL-spezifischen Methoden geprüft werden. Dies kann bedeuten, dass ein nach IEC ausgelegter Schaltschrank für den nordamerikanischen Markt *nicht automatisch zulässig* ist[3](https://ww3.cad.de/foren/ubb/uploads/ME1/IEC_UL_e20001-a300-p301.pdf).
-
----
-
-Quellen:
-- [1](https://krayer.de/ul-wissen/ul-blog/normen-im-schaltschrankbau-iec-ul-und-csa-normen-erklaert/): Siemens – IEC-Normen und EU-Richtlinien im Schaltschrankbau: https://www.siemens.com/de/de/branchen/maschinenbau/schaltschrankbau/eu-richtlinien.html  
-- [2](https://www.neumueller.com/de/knowledge/normen-richtlinien/unterschieduliec): Krayer – Normen im Schaltschrankbau: https://krayer.de/ul-wissen/ul-blog/normen-im-schaltschrankbau-iec-ul-und-csa-normen-erklaert/  
-- [3](https://ww3.cad.de/foren/ubb/uploads/ME1/IEC_UL_e20001-a300-p301.pdf): ICCE – Vergleich UL 508A vs. IEC 61439: https://icce.com/2025/02/20/industrial-control-panels-different-standards/
-
----
 
 
