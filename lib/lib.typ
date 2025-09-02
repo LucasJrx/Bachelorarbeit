@@ -426,6 +426,7 @@
   }
 
   if (show-acronyms and acronyms != none and acronyms.len() > 0) {
+    pagebreak()
     heading(level: 1, numbering: none, outlined: true)[#ACRONYMS.at(language)]
     print-acronyms(language, acronym-spacing)
   }

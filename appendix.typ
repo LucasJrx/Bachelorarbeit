@@ -6,12 +6,12 @@
   ==  ETO-Prozessdiagramm
     #figure( 
         image("Zeitplan_Lucas_Weyland.png", height: 86%,width: 100%,  fit: "stretch"),
-        caption: [ETO-Prozessdiagramm: @weylandEigeneDarstellung],
+        caption: [ETO-Prozessdiagramm: @weylandEigeneDarstellunga],
     )<etoprozess>
   == CTO-Prozessdiagramm
     #figure(
         image("Zeitplan_Lucas_Weyland.png", height: 90%, width: 100%, fit: "stretch"),
-        caption: [CTO-Prozessdiagramm: @weylandEigeneDarstellung]
+        caption: [CTO-Prozessdiagramm: @weylandEigeneDarstellunga]
     )<ctoprozess> 
    
 ]

@@ -18,7 +18,7 @@
   acronyms: acronyms, // displays the acronyms defined in the acronyms dictionary
   at-university: false, // if true the company name on the title page and the confidentiality statement are hidden
   confidentiality-marker: (display: false),
-  bibliography: bibliography("Hausarbeit.bib"),
+  bibliography: bibliography("Bachelorarbeit.bib"),
   date: datetime(day: 23, month: 6, year: 2025), // the date is displayed on the title page
   language: "de", // en, de
   supervisor: (company: "Albert Lewandowski", university: "Margit Rechkemmer"),

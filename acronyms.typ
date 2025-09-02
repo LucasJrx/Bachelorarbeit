@@ -4,4 +4,13 @@
   "DHBW":"Duale Hochschule Baden-Württemberg",
   "ETO": "Engineered to Order",
   "DC": "Direct Current",
+  "AC": "Alternating Current",
+  "PDS": "Power Drive Systems",
+  "UL": "Underwriters Laboratories",
+  "IEC": "International Electrotechnical Commission",
+  "Cu-ETP": "Kupfer Electrolytic Tough Pitch",
+  "EMV": "Elektromagnetische Verträglichkeit",
+  "CFD": "Computational Fluid Dynamics",
+  "SiC": "Siliziumkarbid",
+  "GaN": "Galliumnitrid",
 )
