@@ -69,8 +69,8 @@ Starre Kupferschienen (@Kupferschiene[Abb.]) bestehen aus massiven, meist durch 
 Flexible Kupferschienen (@FlexibleKupferschiene[Abb.]) unterscheiden sich hinsichtlich Aufbau und Materialstruktur deutlich von starren Varianten. Sie bestehen aus mehreren dünnen, übereinanderliegenden Kupferlamellen, die zur mechanischen Fixierung und elektrischen Isolierung mit einer PVC-Ummantelung versehen sind. Die Lamellen weisen typischerweise Dicken von 0,5 bis 1 mm auf; je nach Anwendungsfall können bis zu zehn Lamellen kombiniert werden, wodurch Querschnitte von bis zu 1.200 mm² realisierbar sind. @NVentERIFLEXFlexible[S.12-13] Flexible Kupferschienen bieten durch ihre Isolierung eine hohe Kurzschlussfestigkeit bis zu 120 kA und erfordern im Schaltschrankbau keine zusätzliche mechanische Abstützung im vergleich zu Starren Kupferschienen. @deffaaDesignHandbuchDCcabinets2024
 
 #figure( 
-        image("/chapters/Bachelor/KupferschienenFlexible.jpg", width: 70%,  fit: "stretch"),
-        caption: [Beispiel Flexible Kupferschiene @weylandEigeneDarstellunga],
+        image("/chapters/Bachelor/LaminierteSchiene.png", width: 70%,  fit: "stretch"),
+        caption: [Beispiel Laminierte Kupferschiene @LaminierteKupferschiene],
     )<FlexibleKupferschiene>
 
 Eine weitere Ausführung flexibler Kupferschienen basiert auf verflochtenen Kupferlitzen, die zu einem Geflecht verarbeitet und ebenfalls mit einer PVC-Isolierung ummantelt werden. Die Enden werden in der Regel durch Pressschweißen abgeschlossen. Bei dieser Bauform sind Querschnitte bis 240 mm² möglich. @NVentERIFLEXFlexible[S.25-26] Im Vergleich zu Kabeln gleichen Querschnitts weisen diese Kupfergeflechte eine deutlich höhere Flexibilität auf und ermöglichen eine erleichterte Installation bei komplexen Einbausituationen.
