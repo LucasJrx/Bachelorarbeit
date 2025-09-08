@@ -13,4 +13,6 @@
   "CFD": "Computational Fluid Dynamics",
   "SiC": "Siliziumkarbid",
   "GaN": "Galliumnitrid",
+  "SOP": "Standard Operating Procedure",
+  "KPI": "Key Performance Indicator",
 )

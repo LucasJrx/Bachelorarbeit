@@ -121,6 +121,12 @@ The content of this thesis may not be made available, either in its entirety or 
   "de": "Tabellenverzeichnis",
   "en": "List of Tables",
 )
+
+#let FORMULA_LIST = (
+  "de": "Formelsverzeichnis",
+  "en": "List of Formulas",
+)
+
 #let LIST_OF_APPENDIX = (
   "de": "Anhangsverzeichnis",
   "en": "List of Appendices",

@@ -1,7 +1,7 @@
 #import "@preview/codelst:2.0.2": *
 #import "acronym-lib.typ": init-acronyms, print-acronyms, acr, acrpl, acrs, acrspl, acrl, acrlpl, acrf, acrfpl
 #import "glossary-lib.typ": init-glossary, print-glossary, gls
-#import "locale.typ": TABLE_OF_CONTENTS, LIST_OF_FIGURES, LIST_OF_TABLES, LIST_OF_APPENDIX, CODE_SNIPPETS, APPENDIX, REFERENCES, ACRONYMS
+#import "locale.typ": TABLE_OF_CONTENTS, LIST_OF_FIGURES, LIST_OF_TABLES, LIST_OF_APPENDIX, CODE_SNIPPETS, APPENDIX, REFERENCES, ACRONYMS, FORMULA_LIST
 #import "titlepage.typ": *
 #import "confidentiality-statement.typ": *
 #import "declaration-of-authorship.typ": *
@@ -51,6 +51,7 @@
   show-acronyms: true,
   show-list-of-figures: true,
   show-list-of-tables: true,
+  show-formula-list: true,
   show-list-of-appendix: true,
   show-code-snippets: true,
   show-abstract: true,
@@ -102,6 +103,7 @@
     show-acronyms,
     show-list-of-figures,
     show-list-of-tables,
+    show-formula-list,
     show-code-snippets,
     show-abstract,
     show-zusammenfassung,
@@ -404,10 +406,26 @@
     let count = elems.len()
 
     if (show-list-of-tables and count > 0) {
+      pagebreak()
       heading(level: 1, numbering: none, outlined: true)[#LIST_OF_TABLES.at(language)]
       outline(
         title: none,
         target: figure.where(kind: table),
+      )
+    }
+  }
+
+  // Formelverzeichnis
+context {
+    let elems = query(math.equation)
+    let count = elems.len()
+ 
+    if (show-formula-list and count > 0) {
+      pagebreak()
+      heading(level: 1, numbering: none, outlined: true)[#FORMULA_LIST.at(language)]
+      outline(
+        title: none,
+        target: math.equation,
       )
     }
   }

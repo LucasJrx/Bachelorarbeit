@@ -75,7 +75,7 @@ Es werden alle technischen, organisatorischen und wirtschaftlichen Voraussetzung
 
 Im nächsten Schritt wird der Umfang der Analyse definiert. Betrachtet werden typische Problemstellen, die durch Beobachtungen in der Fertigung identifiziert wurden und an denen eine vertiefte Analyse den größten Mehrwert erwarten lässt. Solche Problemstellen wurden besonders in Schaltschränken mit den Modulgrößen H4 und H6 im Standardsegment des Produktportfolios beobachtet, ebenso in Sonderkonstruktionen, bei denen beispielsweise zwei 2m lange Kabel mit einem Querschnitt von 120 mm² zur Anbindung an einen speziellen DC-Kundenanschluss eingesetzt werden. Gerade an solchen Stellen besteht eine große Vielfalt unterschiedlicher starrer und gelaseter Kupferschienen sowie Kabelverbindungen.
 
-Die Fokussierung auf diese Modulgrößen ermöglicht es, im Nachgang übertragbare Ableitungen für weitere Modulgrößen zu treffen. Der Betrachtungszeitraum erstreckt sich über fünf Jahre. Für finanzielle Bewertungen wird ein kalkulatorischer Zinssatz von 5 % pro Jahr angesetzt.
+Die Fokussierung auf diese Modulgrößen ermöglicht es, im Nachgang übertragbare Ableitungen für weitere Modulgrößen zu treffen. Der Betrachtungszeitraum erstreckt sich über fünf Jahre.
 
 Die Untersuchung erfolgt zunächst auf Projektebene und wird anschließend auf die Jahresproduktion hochgerechnet. Die Analyse berücksichtigt dabei folgende Aspekte (@MindMap[Abb.]):
 
@@ -114,14 +114,14 @@ Die Materialkosten betragen:
    [], [*H4-Schienen*], [*H6-Schienen*], [*Kabelverbindungen*],
   ),
   [ABB],
-  [60,24 €/kg],
+  [60,254 €/kg],
   [19,54 €/kg],
   [15,19 €/m \
   8,00 € für Kabelschuhe],
   [nVent],
   [27,71 €/kg],
   [27,71 €/kg],
-  [27,00 €/m],
+  [16,34 €/m],
   [EMS],
   [25,26 €/kg],
   [25,26 €/kg],
@@ -131,9 +131,18 @@ Die Materialkosten betragen:
 
 Für die Bearbeitung starrer Kupferschienen ist bereits eine Maschine mit Biege-, Stanz- und Schneidewerkzeug vorhanden. Diese kann auch für flexible Kupferschienen genutzt werden. Ergänzend sind für die Verarbeitung flexibler Varianten folgende Zusatzinvestitionen erforderlich:
 
- - Faltstation @MFFNVentERIFLEX: 1.500€
- - Abisolierstation @MFST2NVentERIFLEX: 200€
- - Mitarbeiterschulungen: 350€ pro Person
+#figure(
+  caption: [Investitionskosten],
+  table(
+  columns: (auto,auto, auto),
+  inset: 10pt,
+  align: horizon,
+  table.header(
+   [Faltstation 1.500€ @MFFNVentERIFLEX], [Abisolierstation 200€ @MFST2NVentERIFLEX], [Schulungen 350€ \ pro Person],
+  ),
+
+  )
+)<Investitionskosten>
 
 Die Personalkosten setzen sich wie folgt zusammen:
 Engineering-Personal: 90€ pro Stunde
@@ -155,9 +164,9 @@ Durchschnittlicher Aufwand ca. drei Wochen
 Die zugrunde liegende Analyse basiert auf konkreten Lieferantenangeboten und dient der praxisnahen und realitätsgetreuen Bewertung der betrachteten Alternativen.
 
 == Quantitative Bewertung
-Die wirtschaftliche Vorteilhaftigkeit der verschiedenen Optionen wird mithilfe finanzmathematischer Methoden analysiert. Übliche Verfahren sind die Kapitalwertmethode, der Interne Zinsfuß, die Amortisationsrechnung und die Rentabilitätsberechnung. Ziel ist es, die finanziell beste Lösung zu identifizieren.----
+Die wirtschaftliche Bewertung der Handlungsoptionen wird mit klassischen Verfahren der Investitionsrechnung beurteilt hierzu zählt der Materialkostenvergleich, die Amortisationsdauer, die Gewinnvergleichsrechnung, die Kapitalwertmethode (NPV) und die Rentabilitätsrechnung. Einbezogen werden alle direkt quantifizierbaren Faktoren wie spezifische Materialkosten (€/kg bzw. €/m), Montagezeiten mit zugehörigen Stundensätzen, Engineering- und Konstruktionsaufwände einschließlich Sonderkonstruktionen, einmalige Zusatzinvestitionen wie Werkzeug und Schulungen sowie gegebenenfalls Lager- und Bestandskosten. Auf dieser Grundlage entsteht eine konsistente und transparente Basis für die wirtschaftliche Gegenüberstellung der Alternativen.
 === Materialkostenvergleich <Materialkostenvergleich>
-Nun werden die Schienen die in @Problemstellen und @Kabelproblem markiert sind, hinsichtlich ihrer Materialkosten aus @Materialkosten miteinander verglichen. Im ersten Schritt werden die einzelnen Schienen pro Modul mit den aktuellen Preisen zusammen gefasst. Im zweiten Schritt werden die Preise der flexiblen Schienen von nVent und EMS gegenübergestellt.
+Im Folgenden werden die in @Problemstellen sowie @Kabelproblem identifizierten Schienen- und Sonderkonstruktionsbereiche hinsichtlich ihrer Materialkosten auf Grundlage der in @Materialkosten ausgewiesenen Kilopreise systematisch untersucht. Es werden zuerst die aktuell eingesetzten starren Einzelschienen je Modul H4 und H6 zu modulspezifischen Gesamtmaterialkosten unter Berücksichtigung von Stückpreis und Gewicht zusammengefasst. Schritt 2 stellt diesen Ist-Kosten die Angebotspreise der flexiblen Alternativen (nVent, EMS) gegenüber, um absolute sowie relative Einsparpotenziale (€/Modul und €/kg) zu quantifizieren. 
 #figure(
   caption: [Verbindungenvergleich],
   table(
@@ -204,7 +213,7 @@ Nun werden die Schienen die in @Problemstellen und @Kabelproblem markiert sind, 
   4 €\
  ],
   [4,28 kg\
-  0,4 kg\
+  0,35 kg\
   ],
   [14,13 €/kg\
   -\
@@ -212,7 +221,7 @@ Nun werden die Schienen die in @Problemstellen und @Kabelproblem markiert sind, 
   [66,13 €],
   )   
 )<Schienenvergleich>
-Da jetzt bekannt ist wie Teuer die Schienenpakete der jeweiligen Verbindung sind, kann nun ein Vergleich zu den Angeboten von nVent und EMS gezogen werden. Aus der @Schienenvergleich werden im nächsten Schritt die Gesamtpreise nacheinander angeschaut und mit den Angeboten verglichen.
+Auf Basis der ermittelten Gesamtpreise der jeweiligen Schienenpakete (vgl. @Schienenvergleich) erfolgt im nächsten Schritt der Vergleich mit den Angebotsdaten der Anbieter nVent und EMS. Hierzu werden die Gesamtpreise der bestehenden Lösungen den kalkulierten Kosten der flexiblen Alternativen gegenübergestellt, um das Einsparungspotenzial systematisch zu quantifizieren.
 
 #figure(
   caption: [Angebotsvergleich],
@@ -226,35 +235,238 @@ Da jetzt bekannt ist wie Teuer die Schienenpakete der jeweiligen Verbindung sind
   [Kilopreise],
   [60,24 €/kg],
   [27,71 €/kg],
-  [25,26 €/kg],
+  [26,26 €/kg],
   [H4-Schienen],
   [313,23 €],
   [144,07 €],
-  [131,35 €],
+  [136,55 €],
   [H6-Schienen],
   [572,49 €],
   [695,40 €],
   [584,23 €],
+ 
 
   )   
 )<Angebotsvergleich>
 
-Wie in @Angebotsvergleich zu erkennen, sind die Preise des H4-Moduls die aktuell gekauft und verbaut werden doppelt so hoch wie die Preise der flexiblen Schienen von nVent oder EMS, dieser Preisunterschied lässt sich auf die gelaserten und gebogenen Kupferbleche zurückführen. Wenn man an dieser Stelle die potenziellen Einsparungen durch den Einsatz der flexiblen Schienen betrachtet, wird deutlich, dass hier ein erhebliches wirtschaftliches Potenzial besteht. Im gegensatz zu den Schienen aus dem H6-Modul, sind die Preise der flexiblen Schienen von nVent und EMS höher als die der aktuell verbauten starren Schienen. Der Preis ist bei dieser Verbindung geringer da hier Stangenmaterial nur gebogen wurde was wesentlich kostengünstiger wie Laseren ist. Dennoch könnten auch hier Einsparungen durch reduzierte Montagezeiten und aufwand sowie geringeren Planungsaufwand erzielt werden. Dies gilt es in @QualitativeBewertung zu berücksichtigen. 
+Besonderes Augenmerk wie in @Angebotsvergleich zu erkennen liegt auf den kostenintensiven, gelaserten und gebogenen Sondergeometrien im H4-Modul, deren Preisniveau signifikant über dem der flexiblen Varianten liegt. Die Gegenüberstellung schafft eine transparente Bewertungsbasis. Betrachtet man die potenziellen Einsparungen durch den Einsatz der flexiblen Schienen, wird deutlich, dass hier ein erhebliches wirtschaftliches Potenzial besteht. Im Gegensatz zu den Schienen aus dem H6-Modul sind die Preise der flexiblen Schienen von nVent und EMS höher als die der aktuell verbauten starren Schienen. Der Preis ist bei dieser Verbindung geringer, da hier Stangenmaterial nur gebogen wird, was wesentlich kostengünstiger ist als Lasern. Dennoch könnten auch hier Einsparungen durch reduzierte Montagezeiten und -aufwand sowie geringeren Planungsaufwand erzielt werden. Dies gilt es in @QualitativeBewertung zu berücksichtigen. 
 
-=== Wirtschaftliche Potenziale und ROI <WirtschaftlichePotenzialeROI>
-Die quantitative Bewertung erfolgt mithilfe etablierter Methoden der Investitionsrechnung. Hierbei werden sämtliche direkt quantifizierbaren Faktoren berücksichtigt. Zu den Kostenelementen zählen unter anderem die Materialkosten pro Kilogramm, der Zeitaufwand für die Montage multipliziert mit dem entsprechenden Stundensatz, der Zeitaufwand für die Erstellung von Sonderkonstruktionen, etwaige Werkzeugkosten sowie Lagerkosten. Auf der Nutzen-Seite stehen potenzielle Einsparungen bei der Montagezeit, eine Reduzierung der Fehlerquote und ein geringerer Schulungsaufwand für Mitarbeitende. Zur Berechnung des wirtschaftlichen Werts werden Methoden wie die Kapitalwertmethode (Net Present Value, NPV) sowie eine Break-Even-Analyse herangezogen.
+=== Amortisationsrechnung <Amortisationsrechnung>
+Die Amortisationsrechnung hilft, das Risiko der Investition besser einzuschätzen. Sie zeigt, bei welcher Investition ABB am schnellsten wieder die Investitionskosten deckt und das eingesetzte Kapital zurückgewinnt. Zudem unterstützt sie ABB dabei, die Finanzen gezielt zu planen. Hierdurch erfährt man, wie lange das Kapital in einer bestimmten Investition gebunden bleibt (vgl.@AmortisationsrechnungDefinitionFormeln). Daraus ergibt sich folgende Rechnunge für beide Lieferanten mit folgenden Variablen, die Investitionskosten setzten sich aus den Werkzeugkosten plus Schulungskosten für drei Mitarbeiter zusammen. Die jährlichen Rückflüsse setzen sich aus der differenz der Kosten der aktuellen Kupferpreisen und den Kupferpreisen des jeweiligen Lieferanten multipliziert mit der Anzahl der verkauften Module oder Sonderkonstruktionen.
+
+
+$ "Amortisationsdauer" = "Investitionskosten"/"jährliche Rückflüsse" $
+#figure(
+  caption: [Amortisationsdauer],
+  table(
+  columns: (auto,auto, auto, auto),
+  inset: 10pt,
+  align: horizon,
+  table.header(
+   [*Amortisationsdauer*], [*H4-Module*], [*H6-Module*],[*Sonderkonstruktion*],
+  ),
+  [*nVent*],
+  [0,65 Jahre],
+  [-0,6 Jahre],
+  [238 Jahre],
+  [*EMS*],
+  [0,62 Jahre],
+  [-6,6 Jahre],
+  [-]
+  )   
+)<Amortisationsdauer>
+
+Anhand dieser Ergebnisse aus @Amortisationsdauer wird deutlich, dass sich die Investition in flexible Kupferschienen von nVent und EMS für das H4-Modul innerhalb eines Jahres amortisiert. Dies unterstreicht die wirtschaftliche Attraktivität dieser Option. Die Sonderkonstruktionen sind ebenfalls wirtschaftlich nicht wirklich sinnvoll da hier die Amortisationsdauer mit 238 Jahren sehr lang ist. Für das H6-Modul hingegen zeigt die Analyse eine negative Amortisationsdauer, was darauf hinweist, dass die Investition aus rein wirtschaftlicher Sicht in diesem Fall nicht profitabel ist. Diese Erkenntnisse sind entscheidend für die strategische Entscheidungsfindung bei ABB und verdeutlichen, dass insbesondere im Bereich der H4-Module ein erhebliches Einsparpotenzial durch den Einsatz flexibler Kupferschienen realisiert werden kann. Für das H6-Modul sowie für die Sonderkonstruktionen sollte hingegen eine genauere Betrachtung der qualitativen Aspekte erfolgen, um eine noch fundiertere Entscheidung treffen zu können. Deshalb wird in den Nachfolgenden Berechnungen nur noch mit dem H4-Modul weitergerechnet.
+=== Gewinnvergleichsrechnung <Gewinnvergleichsrechnung>
+Dieser berechnet sich, indem man die zurechenbaren Kosten der Investition von den zurechenbaren Erlösen abzieht (vgl. @GewinnvergleichsrechnungEinfachErklaert). Die Formel der Gewinnvergleichsrechnung lautet
+
+#set math.equation(number-align: top)
+$ "Gewinn" = "Erlöse" - "Gesamtkosten"\ 
+"mit" "Erlöse" = "Verkaufte Module"*"Kupferpreis Differenz" \
+"und" "Gesamtkosten" = "Abschreibungen"+"Kalkulatorische Zinsen" $
+
+#figure(
+  caption: [Gewinnvergleichsrechnung],
+  table(
+  columns: (auto,auto, auto),
+  inset: 10pt,
+  align: horizon,
+  table.header(
+   [], [*nVent*], [*EMS*],
+  ),
+  [*Abschreibungen*],
+  [550 €],
+  [550 €],
+  [*Kalkulatorische Zinsen*],
+  [68,75 €],
+  [68,75 €],
+  [*Gesamtkosten*],
+  [618,75 €],
+  [618,75 €],
+  [*Erlöse*],
+  [4.229 €],
+  [4.417 €],
+  [*Gewinn*],
+  [3.610,255 €],
+  [3.798,25 €]
+  )   
+)<Gesamtkosten>
+
+Aus @Gesamtkosten erkennt man das der Lieferant EMS im Vergleich zu nVent höhere Erlöse und Gewinne erzielt. Dies bedeutet das hier die flexiblen Kupferschienen wirtschaftlich attraktiver sind. EMS hat aber keine alternativen für Sonderkonstruktionen wie nVent, deshalb ist hier nVent im Vorteil. 
+
+=== Rentabilitätsrechnung <Rentabilitätsrechnung>
+Die Investition wird dabei anhand ihrer Rentabilität beurteilt und wählt diejenige mit dem höheren Wert. Man wählt dann diejenige Alternative mit dem höheren Wert (vgl. @RentabilitaetsrechnungFormelBeispiel).
+
+$ "Rentabilität" = ("Gewinn"+"kalkulatorische Zinsen")/"gebundenes Kapital" *100 $
+
+Hier lassen sich aus @Gesamtkosten die Daten zum errechnen der Rentabilität entnehmen. Um nochmal genau zu zeigen wie Rentabel die betrachteten H4-Alternativen sind, werden die Werte in die Formel eingesetzt.
+#figure(
+  caption: [Rentabilitätsrechnung],
+  table(
+  columns: (auto,auto, auto),
+  inset: 10pt,
+  align: horizon,
+  table.header(
+   [], [*nVent*], [*EMS*],
+  ),
+  [*Gewinn*],
+  [3610,255 €],
+  [3.798,25 €],
+  [*kalkulatorische Zinsen*],
+  [68,75 €],
+  [68,75 €],
+  [*gebundenes Kapital*],
+  [1375 €],
+  [1375 €],
+  [*Rentabilität*],
+  [267,5 %],
+  [281,24 %]
+  )   
+)<Rentabilitaet>
+Die Rentabilitätsrechnung in @Rentabilitaet zeigt, dass beide Lieferanten eine sehr hohe Rentabilität im vergleich zu den aktuell Verwendeten Schienen beim H4-Modul aufweisen. EMS schneidet mit 281,24 % etwas besser ab als nVent mit 267,5 %. Dies unterstreicht die wirtschaftliche Attraktivität der Investition in flexible Kupferschienen, insbesondere im Vergleich zu anderen möglichen Investitionen. Beide Optionen bieten eine hervorragende Rendite auf das eingesetzte Kapital, was sie zu attraktiven Alternativen für ABB macht.
+
+
+=== Kapitalwertmethode <Kapitalwertmethode>
+Mithilfe der Kapitalwertmethode oder auch Nettobarwert, NBW, Net Present Value oder NPV genannt lassen sich Investitionsentscheidungen mithilfe des Kapitalwertes treffen. Hierbei wird der Cashflow, der im Zusammenhang mit der Investition stehen, auf den heutigen Zeitpunkt abgezinst. Dies ermöglicht eine objektive Bewertung der Wirtschaftlichkeit der Investition, indem zukünftige Zahlungsströme in den aktuellen Wert umgerechnet werden (vgl. @KapitalwertmethodeErklaerungFormel).
+
+#set math.equation(number-align: top)
+$ -Z_0 + sum_(t=1)^T Z_t / (1 + r)^t = "NBW" >= 0 \
+Z_0 = "Anfangsinvestition", T = "Betrachtungszeitraum"\ 
+Z_t = "Zahlungsstrom", r = "Kalkulationszinssatz", t = "Periode" \
+"daraus folgt" 3.438,33€ + 3.274,60€ + 3.118,66€ + 2.970,156€ + 2.828,72€ = 15.630,357€ \ 
+"NBW nVent" = 15.630,357€ - 2.750€ = 12.880,357€\
+"NBW EMS" = 16.444,43€ - 2.750€ = 13.694,43€ $
+
+Aus den NBW-Werten in @Kapitalwertmethode lässt sich ableiten, dass beide Optionen wirtschaftlich attraktiv sind. EMS erzielt mit 13.694,43 € den höheren Kapitalwert gegenüber nVent mit 12.880,357 €. Für H4-Module ist die Umstellung auf flexible Schienen damit unter rein finanziellen Gesichtspunkten zu bevorzugen, vorzugsweise mit EMS. Bei Bedarf an Sonderkonstruktionslösungen bleibt nVent aufgrund des Portfolios eine relevante Alternative. Die Ergebnisse sind konsistent mit @Amortisationsdauer und @Rentabilitaet und werden in @QualitativeBewertung um nicht-monetäre Kriterien ergänzt.
 
 == Qualitative Bewertung <QualitativeBewertung>
-Da nicht alle relevanten Aspekte monetär bewertbar sind, wird eine ergänzende qualitative Bewertung durchgeführt. Hierbei kommen Kriterien wie Layout-Flexibilität, Sicherheitsaspekte (z.B. Schutz bei Vibrationen), Schulungsaufwand sowie der Innovationsgrad bzw. der Einfluss auf das Unternehmensimage zur Anwendung. Diese Faktoren werden in einer Nutzwertanalyse (Scoring-Modell) erfasst, bei der zunächst die Kriterien definiert und gewichtet und anschließend die beiden Optionen auf einer Skala bewertet werden. Die Ergebnisse werden in einer Matrix dargestellt.
-=== Installations- und Planungsaufwand <InstallationsPlanungsaufwand>
-=== Auswirkungen auf Fertigungsprozesse <AuswirkungenFertigungsprozesse>
+=== Nutzwertanalyse <Nutzwertanalyse>
+Da nicht alle relevanten Aspekte monetär bewertbar sind, wird eine ergänzende qualitative Bewertung durchgeführt. Hierbei kommen Kriterien wie Layout-Flexibilität, Engineeringaufwand, Schulungsaufwand sowie der Montageaufwand zum Tragen. Diese Faktoren werden in einer Nutzwertanalyse (Scoring-Modell) erfasst, bei der zunächst die Kriterien beschrieben, gewichtet und anschließend die Optionen auf einer Skala von 1 bis 4 bewertet werden. 1 = gering, 2 = mittel, 3 = hoch, 4 = sehr hoch. Die Ergebnisse werden in einer Matrix dargestellt, und anschließend die gewichteten Punktwerte berechnet. Diese ergänzende Bewertung ermöglicht eine ganzheitliche Betrachtung der Handlungsoptionen im bezug auf die Qualitativen Aspekte (vgl. @NutzwertanalyseErklaerungUnda).
+=== Montage- und Planungsaufwand <MontagePlanungsaufwand>
+Die Montagezeiten für starre Kupferschienen sind im Vergleich zu flexiblen Varianten deutlich höher. Dies liegt an der Notwendigkeit, Abstandshalter, Isolatoren und Schraubverbindungen zu verwenden, was den Einbauprozess verkompliziert und verlängert. Flexible Kupferschienen hingegen lassen sich einfacher und schneller installieren, da sie sich besser an die vorhandenen Gegebenheiten anpassen lassen. Dies führt zu einer erheblichen Reduktion der Montagezeiten um bis zu 50%, was nicht nur die Effizienz in der Fertigung steigert, sondern auch die Personalkosten pro Projekt senkt. Durch die verminderung der einzubauenden Teile wird auch der Planungsauswand im Engineering reduziert, da weniger Halterungsplatzierungen und Abstandsdefinitionen erforderlich sind. Insgesamt trägt dies zu einer signifikanten Verbesserung der Prozessabläufe bei und ermöglicht eine schnellere Reaktionsfähigkeit auf kundenspezifische Anforderungen.
+=== Layout-Flexibilität <LayoutFlexibilitaet>
+Durch den Einsatz von flexiblen Kupferschienen wird die Layout-Flexibilität im Schaltschrankdesign erheblich gesteigert. Flexible Schienen können leichter an unterschiedliche räumliche Gegebenheiten angepasst werden, was insbesondere bei komplexen oder platzkritischen Anwendungen von Vorteil ist. Dies ermöglicht es dem Engineering-Team, kreativer und effizienter zu arbeiten, da weniger Einschränkungen durch starre Bauteile bestehen. Die erhöhte Flexibilität führt zu einer schnelleren Umsetzung von Designänderungen und Anpassungen, was wiederum die Gesamtprojektzeit verkürzt und die Kundenzufriedenheit steigert. Zudem können durch den Einsatz flexibler Schienen innovative Lösungen realisiert werden, die mit starren Komponenten nur schwer oder gar nicht umsetzbar wären.
+=== Schulungsaufwand <Schulungsaufwand>
+Der Schulungsaufwand für die Einführung flexibler Kupferschienen ist im Vergleich zu starren Varianten höher. Während das Fertigungspersonal mit den neuen Montageprozessen vertrautt gemacht werden muss, sind auch Anpassungen im Engineering erforderlich, um die neuen Designmöglichkeiten optimal zu nutzen. Dies umfasst sowohl theoretische Schulungen als auch praktische Übungen, um sicherzustellen, dass alle Mitarbeiter die neuen Verfahren und Werkzeuge sicher und effizient anwenden können. Trotz des anfänglich höheren Aufwands führt die Investition in Schulungen langfristig zu einer verbesserten Prozesssicherheit und Effizienz, da das Personal besser auf die Anforderungen und Herausforderungen der flexiblen Schienen vorbereitet ist. Zudem können durch gezielte Schulungsmaßnahmen Fehlerquellen wie z.B. falsches Biegen der Schienen minimiert und die Qualität der Endprodukte gesteigert werden.
 
-== Risikoanalyse
-Ein weiterer methodischer Schritt besteht in der Risikoanalyse. Ziel ist es, die Sensitivität der Ergebnisse gegenüber Schwankungen zentraler Parameter zu prüfen. Dies erfolgt durch eine Sensitivitätsanalyse, in der beispielsweise die Auswirkungen veränderter Montagezeiten oder Materialkosten auf das Gesamtergebnis simuliert werden. Ergänzt wird dies durch eine Szenarioanalyse (Best-Case, Realistic-Case, Worst-Case). Optional kann auch eine Monte-Carlo-Simulation durchgeführt werden, um die Unsicherheiten umfassend zu quantifizieren.
+Daraus ergibt sich folgende Gewichtung der Kriterien für die Nutzwertanalyse:
 
-== Empfehlung und Fazit
-Abschließend werden die Ergebnisse der quantitativen und qualitativen Bewertung zusammengeführt und in einem Entscheidungsbaum visualisiert. Daraus ergibt sich eine fundierte Handlungsempfehlung, welche Option unter den analysierten Rahmenbedingungen die ökonomisch und technisch sinnvollere ist. Diese Empfehlung wird kritisch reflektiert, inklusive einer Diskussion möglicher methodischer Grenzen sowie eines Ausblicks auf weiterführende Forschung oder Umsetzungsschritte.
+#figure(
+  caption: [Nutzwertanalyse],
+  table(
+    columns: (auto, 80pt, auto, auto, auto),
+    align: horizon,
+    table.header(
+      [*Kriterium*], [*Gewichtung*], [*ABB*], [*flexible\ Schienen*], [*Sonderkonstruktion*],
+    ),
+    [], [],
+      [#table(columns: 2, [Punkte], [Gewichtung ])],
+      [#table(columns: 2, [Punkte], [Gewichtung ])],
+      [#table(columns: 2, [Punkte], [Gewichtung ])],
 
+    [Layout-\ Flexibilität], [25%],
+    [#table(columns: 2,  [1], [$0,25*1= 0,25$])],[#table(columns: 2,  [4], [$0,25*4= 1$])],[#table(columns: 2,  [2], [$0,25*2= 0,5$])],
 
-Diese methodisch fundierte Beschreibung kann direkt in die entsprechenden Kapitel der Bachelorarbeit übernommen und auf den konkreten Anwendungsfall bei ABB angepasst werden. Bei Bedarf können weitere Rechenbeispiele oder Visualisierungen ergänzt werden.
+    [Engineering], [25%],
+    [#table(columns: 2,  [2], [$0,25*2= 0,5$])],[#table(columns: 2,  [3], [$0,25*3= 0,75$])],[#table(columns: 2,  [2], [$0,25*2= 0,5$])],
+
+    [Schulungen], [15%],
+    [#table(columns: 2,   [4], [$0,15*4= 0,6$])],[#table(columns: 2,  [1], [$0,15*1= 0,15$])],[#table(columns: 2,   [3], [$0,15*3= 0,45$])],
+
+    [Montage], [35%],
+    [#table(columns: 2,  [1], [$0,35*1= 0,35$])],[#table(columns: 2,   [4], [$0,35*4= 1,4$])],[#table(columns: 2,  [2], [$0,35*2= 0,7$])],
+
+    [Summe], [100%],
+    [#table(columns: 2,  [8], [1,7])],[#table(columns: 2,  [12], [3,3])],[#table(columns: 2,  [9], [2,15])],
+  )
+)<Nutzwerttabelle>
+
+Aus der Nutzwertanalyse geht hervor, dass die Option des kombinierten Einsatzes starrer und flexibler Kupferschienen mit einem Nutzwert von 3,2 die höchste Bewertung erzielt. Dies unterstreicht die Vorteile dieser hybriden Lösung hinsichtlich Layout-Flexibilität und Montageaufwand. Die Verwendung von flexiblen Kupferschienen in Sonderkonstruktionen erreicht einen Nutzwert von 2,15, was ebenfalls eine positive Bewertung darstellt, jedoch aufgrund des höheren Schulungsaufwands und der geringeren Flexibilität etwas weniger attraktiv ist. Die Beibehaltung starrer Kupferschienen schneidet mit einem Nutzwert von 1,7 am schlechtesten ab, was die begrenzten Möglichkeiten zur Prozessoptimierung und Effizienzsteigerung verdeutlicht. Hierdurch lässt sich aber auch ableiten, dass trotz teurerer Schienen wie in @Materialkostenvergleich beschrieben im H6-Modul sowie bei Sonderkonstruktionen durch den geringeren Montageaufwand und Planungsaufwand eine wirtschaftliche Verbesserung erzielt werden kann.
+
+== Risikoanalyse <Risikoanalyse>
+Ziel der Risikoanalyse ist es, die Robustheit der in @Amortisationsdauer, @Rentabilitaet und @Kapitalwertmethode ermittelten Ergebnisse gegenüber Schwankungen zentraler Treiber zu prüfen. Im Fokus stehen liefer-, kosten- und prozessbezogene Risiken sowie deren Eintrittswahrscheinlichkeit, Auswirkung und geeignete Gegenmaßnahmen.(vgl. @andreaRisikoanalyseBeispielSchritt2023@RisikoanalyseDurchfuehrenMit2019)
+
+=== Methode und Bewertungslogik
+Die Analyse folgt drei Schritten, zunächst wird ein Risikoinventar erstellt, in dem die identifizierten Risiken den Kategorien Lieferkette, Kosten, Operation, Qualität, Compliance und Organisation zugeordnet werden. Anschließend erfolgt eine quantitative Sensitivitätsbetrachtung, bei der zentrale Treiber insbesondere Kupfer- und Lieferantenpreise, Montage- und Engineering-Zeiten, Absatz sowie der Kalkulationszinssatz variiert und ihre qualitative Wirkung auf NBW und Amortisation beurteilt werden. Abschließend wird eine Szenarioanalyse mit konsistenten Best-, Realistic- und Worst-Case-Annahmen durchgeführt, aus der konkrete Implikationen abgeleitet werden.
+
+=== Risikoinventar und Priorisierung
+Die wesentlichen Risiken werden nach Eintrittswahrscheinlichkeit E und Auswirkung A bewertet und mit Maßnahmen hinterlegt.
+
+#figure(
+  kind: table,
+  caption: [Risikomatrix],
+  table(
+    columns: (auto, auto, auto, auto, auto),
+    inset: 5pt,
+    align: horizon,
+    table.header([*Kategorie*], [*Risiko*], [*E*], [*A*], [*Maßnahmen*]),
+    [Lieferkette], [Abhängigkeit von Einzel-Lieferanten; Lieferzeit-/Preisschwankungen], [mittel], [hoch], [Rahmenverträge,\ Sicherheitsbestände],
+    [Kosten], [Kupferpreis-\ Wechselkursvolatilität], [hoch], [mittel], [Gleitklauseln,\ Preis-Reviews],
+    [Operation], [Anlaufverluste\ unterschätzte Montage-,\ Rüstzeiten], [mittel], [mittel\ -hoch], [Pilotserie, #acrs("SOP"), Zeitaufnahmen, Kaizen],
+    [Qualität], [Biege-/Pressfehler\ höherer Kontaktwiderstand/Hotspots], [mittel], [hoch], [Arbeitsanweisungen, Tests,\ Prüfplan erweiterung],
+    [Compliance], [Normabweichungen (EMV, Erwärmung, Berührungsschutz)], [niedrig\ - mittel], [hoch], [Design-Verifikation,\ Dokumentation,\ Freigabeprozess],
+    [Organisation], [Schulungsbedarf,\ Bedienfehler], [mittel], [mittel], [Trainings, Paten-System, Lessons Learned],
+  )
+)
+
+=== Quantitative Sensitivität <Sensitivitaet>
+Die Wirkung zentraler Treiber auf NBW und Amortisation wird zusammengefasst.
+
+#figure(
+  kind: table,
+  caption: [Sensitivitätsübersicht zentraler Treiber],
+  table(
+    columns: (auto, 60pt, auto),
+    inset: 5pt,
+    align: horizon,
+    table.header([*Treiber*], [*Variation*], [*Wirkung*]),
+    [Kupferpreis (ABB vs. flexibel)], [±20 %], [stark: beeinflusst Differenzkosten direkt],
+    [Lieferantenpreise (nVent/EMS)], [+10 %], [mittel-stark: NBW sinkt, Amortisation ↑],
+    [Montagezeit flexibel], [±30 %], [stark: Hauptnutzenhebel Zeitersparnis],
+    [Engineering-Aufwand], [±20 %], [mittel: wirkt auf Kosten/Anlauf],
+    [Absatz (pro Jahr)], [±20 %], [mittel-stark: skaliert Rückflüsse],
+    [Kalkulationszinssatz $r$ ], [+2 pp], [gering-mittel: diskontiert Rückflüsse stärker],
+  )
+)
+
+Die Ergebnisse sind besonders sensitiv gegenüber Montagezeiten, Lieferantenpreisen und Kupferpreisdifferenzen. Fokus auf robuste Fertigungsprozesse und zuverlässige Beschaffung erhöht die Stabilität der Wirtschaftlichkeit.
+
+=== Szenarioanalyse <Szenarien>
+Im Best-Case sinken die Kupferpreise, die Montagezeit reduziert sich gegenüber starren Schienen um etwa 30 % und die Lieferzeiten bleiben stabil. In diesem Szenario ist mit einer sehr kurzen Amortisationsdauer und einem deutlich positiven Nettobarwert zu rechnen. Im Realistic-Case verringert sich die Montagezeit um rund 15-20 %, die Preise bleiben weitgehend stabil und Anlaufverluste sind gering, hier wird insbesondere für H4-Module eine positive Amortisation bei NBW > 0 erwartet. Im Worst-Case steigen die Lieferantenpreise um etwa 10 %, die Montagezeit erhöht sich anfangs um rund 15 % und es kommt zu Lieferverzügen, die Amortisation verzögert sich, bleibt mit den vorgesehenen Maßnahmen jedoch tragfähig, wobei H4-Module weiterhin zu priorisieren sind.
+=== Maßnahmenplan und Monitoring
+Zur Absicherung der Beschaffung wird ein Rahmenvertrag mit Preisgleitklauseln mit nVent oder EMS etabliert sowie Sicherheitsbestände für häufig verwendete Querschnitte. Auf Prozess- und Qualitätsseite beginnt die Einführung mit einer Pilotserie inklusive Erstmusterprüfbericht. Ein Prüfplan mit Messungen zu Kontaktwiderstand und Erwärmung sowie Wärmebildern wird angewendet, und Biege- und Pressparameter werden dokumentiert.
+
+Die Norm- und Compliance-Anforderungen werden durch Verifikationen auf Erwärmung, Kurzschlussfestigkeit, Kriech- und Luftstrecken geprüft, ein EMV-Konzept sowie einen strukturierten Änderungs- und Freigabeprozess wird ebenfalls angestrebt. Organisatorisch werden Schulungen für Montage, Bearbeitung und das Engineering-Team durchgeführt, #acrs("SOP")s bereitgestellt und nach den ersten Projekten Reviews durchgeführt. Die Steuerung erfolgt über ein Key Performance Indicator-Set (Montagezeit, Nacharbeit, Ausschuss, Termintreue) mit monatlichen Reviews und schnellen Korrekturmaßnahmen. (vgl. @WasSindKPIs2023)
+
+=== Rest-Risiko und Implikation
+Unter Umsetzung der Maßnahmen verbleibt ein moderates Rest-Risiko bei der Preis-/Lieferkette sowie der Anlaufkurve. Die Präferenz zugunsten flexibler Schienen im H4-Bereich bleibt robust, da Zeit- und Materialeffekte die Risiken überwiegen. Für H6-Module und Sonderkonstruktionen empfiehlt sich eine schrittweise Einführung mit Pilotprojekten, Zwischenbewertungen und enger Begleitung (vgl. @Nutzwertanalyse).
+
+== Empfehlung der Handlungsoption <Empfehlung>
+Die Ergebnisse der quantitativen Bewertung zeigen, dass der Einsatz flexibler Kupferschienen für H4-Module unter den betrachteten Annahmen finanziell vorteilhaft ist. Sowohl die Amortisationsrechnung als auch die Rentabilitätsrechnung und der Nettobarwert belegen deutliche Vorteile gegenüber der bestehenden Lösung (vgl. @Amortisationsdauer, @Rentabilitaet, @Kapitalwertmethode). Dabei erzielt EMS im Mittel die etwas besseren Kapitalwerte und Gewinnbeiträge, während nVent aufgrund einer breiteren Variantenvielfalt für Sonderkonstruktionen eine relevante Alternative bleibt. Für H6-Module ergibt sich auf Materialkostenseite kein eindeutiger Vorteil, potenzielle Effekte entstehen hier primär über reduzierte Montage- und Engineeringzeiten und sind im Einzelfall zu verifizieren. Die qualitative Bewertung stützt dieses Bild. Die Nutzwertanalyse weist einem hybriden Ansatz die höchste Zielerreichung zu, da er wirtschaftliche Effekte mit Prozessstabilität und technischer Flexibilität verbindet (vgl. @Nutzwertanalyse).
+
+Vor diesem Hintergrund wird empfohlen, H4-Module standardmäßig auf flexible Kupferschienen umzustellen und eigentlich EMS als primäre Bezugsquelle zu etablieren, hier ist nur im Laufe dieser Arbeit ein interner Konflikt mit EMS aufgetreten und aus Integity-Gründen darf bei diesem Lieferanten nicht bestellt werden, dadurch wird nVent als qualifizierte Bezugsquelle für flexible Schienen und Kabelersatz etabliert. Für H6-Module sowie Sonderkonstruktionen bietet sich ein selektiver Einsatz flexibler Schienen an, insbesondere an platzkritischen oder arbeitsintensiven Stellen, im Übrigen sollte die bestehende Lösung beibehalten werden. Diese Ausrichtung maximiert den wirtschaftlichen Nutzen, ohne unverhältnismäßige Umstellungsrisiken in denjenigen Bereichen einzugehen, in denen die Materialkostenvorteile geringer ausfallen.
+
+Die Umsetzung sollte stufenweise erfolgen. Zunächst wird eine Pilotphase mit Erstmusterprüfung und dokumentierten Biege-/Pressparametern aufgesetzt, flankiert von Schulungen für Montage und Engineering sowie der Einführung standardisierter Arbeitsanweisungen. Im Anschluss werden Serienfreigaben, Rahmenverträge mit Preisgleitklauseln und Sicherheitsbestände für oft verwendete Querschnitte etabliert. Ein begleitendes Monitoring über ein kompaktes #acrs("KPI")-Set (u.a. Montagezeit, Nacharbeitsquote, Ausschuss, Termintreue) stellt Transparenz über realisierte Effekte und Anlaufstabilität her. Die Risikoanalyse zeigt, dass bei Umsetzung dieser Maßnahmen ein moderates, beherrschbares Restrisiko verbleibt, besondere Aufmerksamkeit gilt Preis-/Lieferkettenschwankungen sowie der Anlaufkurve (vgl. @Risikoanalyse, @Szenarien).
+
+In der Gesamtschau ist die Option 3 der hybride Ansatz die präferierte Handlungsoption. Er bietet für H4-Module klare finanzielle Vorteile und ermöglicht zugleich für H6-Module und Sonderkonstruktionen eine nutzenbasierte, selektive Anwendung. Damit wird eine belastbare Balance aus Wirtschaftlichkeit, Prozesssicherheit und technischer Flexibilität erreicht. Die Empfehlung gilt unter den analysierten Rahmenbedingungen und sollte im Rahmen regelmäßiger Reviews sowie mit fortschreitender Datengrundlage validiert und im Nachhinein auf weitere Modulgrößen skaliert werden.
 
