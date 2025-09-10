@@ -393,6 +393,7 @@
     let count = elems.len()
 
     if (show-list-of-figures and count > 0) {
+      pagebreak()
       heading(level: 1, numbering: none, outlined: true)[#LIST_OF_FIGURES.at(language)]
       outline(
         title: none,

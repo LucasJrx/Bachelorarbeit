@@ -3,16 +3,21 @@
   #counter(figure.where(kind: image)).update(0)
   #set figure(supplement: "Anhang")
 
-  ==  ETO-Prozessdiagramm
+  ==  EMS-Angebot
     #figure( 
-        image("Zeitplan_Lucas_Weyland.png", height: 86%,width: 100%,  fit: "stretch"),
-        caption: [ETO-Prozessdiagramm: @weylandEigeneDarstellunga],
-    )<etoprozess>
-  == CTO-Prozessdiagramm
+        image("/chapters/Bachelor/EMS_Angebot.png", height: 86%,width: 100%,  fit: "stretch"),
+        caption: [EMS Angebot mit markierten Preis @weylandEigeneDarstellunga],
+    )<emsangebot>
+  == nVent-Preise
     #figure(
-        image("Zeitplan_Lucas_Weyland.png", height: 90%, width: 100%, fit: "stretch"),
-        caption: [CTO-Prozessdiagramm: @weylandEigeneDarstellunga]
-    )<ctoprozess> 
-   
+        image("/chapters/Bachelor/Preise_Flexibars_HD.png", width: 100%, fit: "stretch"),
+        caption: [nVent-Preise: @weylandEigeneDarstellunga]
+    )<nVentpreise>
+
+    == ABB-Preise
+    #figure(
+        image("/chapters/Bachelor/ABB_Angebot.png", width: 100%, fit: "stretch"),
+        caption: [ABB-Preise: @weylandEigeneDarstellunga]
+    )<abbpreise>
 ]
 

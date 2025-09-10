@@ -27,8 +27,9 @@
   university-short: "DHBW",
   processing_period: "23.06.2025 bis 15.09.2025", // the processing period is displayed on the title page
   appendix: appendix,
-  abstract: abstract,
   zusammenfassung: zusammenfassung, // the zusammenfassung is displayed on the title page
+  abstract: abstract,
+  
 
   // for more options check the package documentation (https://typst.app/universe/package/supercharged-dhbw)
 )
@@ -40,8 +41,8 @@
 #include "chapters/3_stand_der_technik.typ"
 #include "chapters/4_methodik.typ"
 #include "chapters/5_wirtschaftliche_bewertung.typ"
-#include "chapters/6_technische_analyse.typ"
 #include "chapters/7_fallstudie_beispielanwendung.typ"
+#include "chapters/6_technische_analyse.typ"
 #include "chapters/8_diskussion.typ"
 #include "chapters/9_fazit_ausblick.typ"
 

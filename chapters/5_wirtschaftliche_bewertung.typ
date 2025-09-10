@@ -1,29 +1,11 @@
 #import "../lib/lib.typ": *
 
 = Wirtschaftsanalyse <Wirtschaftsanalyse>
-Im Rahmen dieser Arbeit erfolgt die wirtschaftliche Bewertung des Einsatzes flexibler Kupferschienen im Schaltschrankbau auf Basis einer strukturierten Business Case Analyse. Diese dient als methodisches Instrument zur systematischen Bewertung von Investitionsalternativen und erlaubt eine objektivierte Entscheidungsfindung unter Berücksichtigung von Kosten, Nutzen, Risiken und qualitativen Zusatzaspekten [1], [2].
+Im Rahmen dieser Arbeit erfolgt die wirtschaftliche Bewertung des Einsatzes flexibler Kupferschienen im Schaltschrankbau auf Basis einer strukturierten Business Case Analyse. Diese dient als methodisches Instrument zur systematischen Bewertung von Investitionsalternativen und erlaubt eine objektivierte Entscheidungsfindung unter Berücksichtigung von Kosten, Nutzen, Risiken und qualitativen Zusatzaspekten (vgl. @taschnerBusinessCases2017@meertensCreatingBusinessCase2014).
 
-Ziel des Business Case ist es, eine Entscheidungsgrundlage zu schaffen, die sowohl auf monetären Kennzahlen wie Kapitalwert, Amortisationsdauer oder internem Zinsfuß basiert als auch nicht-monetäre Faktoren berücksichtigt, etwa Montageaufwand, Designfreiheit oder Normenkonformität [1], [3], [4].
-
-Das Vorgehen orientiert sich an einem standardisierten Prozess, wie er in der Fachliteratur vielfach beschrieben ist [1], [2], [5], und umfasst folgende Schritte:
-
-Definition der Entscheidungssituation und der Alternativen (starre vs. flexible Kupferschienen)
-
-Quantifizierung von Investitions- und Betriebskosten auf Basis realer Angebote [6], [7]
-
-Bewertung des erwarteten Nutzens, u.a. in Form von Einsparungen im Platzbedarf, Zeitaufwand und Materialverbrauch [8]
-
-Berechnung der zentralen Wirtschaftlichkeitskennzahlen (NPV, IRR, Amortisationsdauer)
-
-Ergänzende Bewertung nicht-monetärer Kriterien mittels Nutzwertanalyse
-
-Sensitivitätsanalyse zur Bewertung der Robustheit unter veränderten Rahmenbedingungen
+Ziel des Business Case ist es, eine Entscheidungsgrundlage zu schaffen, die sowohl auf monetären Kennzahlen wie Kapitalwert, Amortisationsdauer oder internem Zinsfuß basiert als auch nicht-monetäre Faktoren berücksichtigt, etwa Montageaufwand, Designfreiheit oder Normenkonformität (vgl. @taschnerBusinessCases2017@weiberStrukturgleichungsmodellierung2009@andreeWirtschaftlichkeitsanalyseOeffentlicherInvestitionsprojekte2011).
 
 Die Business Case Analyse stellt damit einen praxisorientierten Bewertungsrahmen dar, der über eine reine Kostenbetrachtung hinausgeht und eine fundierte Entscheidung hinsichtlich der Einführung flexibler Kupferschienen im industriellen Schaltschrankbau ermöglicht.
-
-In diesem Schritt wird die zentrale Fragestellung der Business Case Analyse formuliert. Es werden die relevanten Handlungsalternativen definiert, die im weiteren Verlauf miteinander verglichen werden sollen. Ziel ist es, eine klare Entscheidungsbasis für oder gegen eine Maßnahme zu schaffen.
-
-https://allybc.de/glossar/business-case/
 
 == Problemdefinition und Zielsetzung
 In diesem Schritt wird die zentrale Fragestellung der Business Case Analyse formuliert. Es werden die relevanten Handlungsalternativen definiert, die im weiteren Verlauf miteinander verglichen werden sollen. Ziel ist es, eine klare Entscheidungsbasis für oder gegen eine Maßnahme zu schaffen. Zu Beginn der Untersuchung erfolgt eine präzise Problemdefinition. Ausgangspunkt ist die Analyse der aktuellen Produktionspraxis hinsichtlich der Verwendung starrer Kupferschienen und der damit verbundenen Herausforderungen.
@@ -37,12 +19,12 @@ Starre Kupferschienen weisen aufgrund normativer Vorgaben sowie sicherheitsrelev
     image("/chapters/Bachelor/H4-Modul.png",height: 45%, fit: "stretch"),
     image("/chapters/Bachelor/H6-Modul.png",height: 45%, fit: "stretch"),
   ),
-  caption: [Problemstellen mit Rot Markiert H4 (Links) & H6 (Rechts) @weylandEigeneDarstellunga],
+  caption: [Problemstellen, rot Markiert H4 (Links) & H6 (Rechts) @weylandEigeneDarstellunga],
 )<Problemstellen>
 
 Beobachtungen im Montageprozess verdeutlichen zusätzliche Problembereiche. Der Einbau starrer Kupferschienen ist häufig mit einem erhöhten Zeitaufwand verbunden, da diese Bauteile oftmals schwer, unhandlich und durch Fertigungstoleranzen nicht passgenau sind (@Problemstellen[Abb.] Rechts). Darüber hinaus treten Installationsfehler regelmäßig auf, da sich einzelne Schienenpakete nur geringfügig unterscheiden und nicht immer eindeutig beschriftet sind. Dies erschwert die Zuordnung und führt zu potenziellen Montagefehlern.
 
-Bei genauerer Betrachtung wurden weitere Aspekte identifiziert eines betrifft die Verwendung gelaserter und anschließend gebogener Kupferbleche (@Problemstellen[Abb.] Links) zur Realisierung komplexer Anschlussgeometrien und ein  Obwohl diese Lösung technisch funktional ist, erweist sie sich in der Herstellung als besonders aufwendig. Die Betrachteten Problemstellen spiegeln sich auch im Preis der Kupferschienen wieder, diese waren Auffällig in der Liste der gekauften Kupferschienen.
+Bei genauerer Betrachtung wurden weitere Aspekte identifiziert eines betrifft die Verwendung gelaserter und anschließend gebogener Kupferbleche (@Problemstellen[Abb.] Links) zur Realisierung komplexer Anschlussgeometrien und obwohl diese Lösung technisch funktional ist, erweist sie sich in der Herstellung als besonders aufwendig. Die Betrachteten Problemstellen spiegeln sich auch im Preis der Kupferschienen wieder, diese waren Auffällig in der Liste der gekauften Kupferschienen.
 
 #figure(
    grid(
@@ -56,7 +38,7 @@ Bei genauerer Betrachtung wurden weitere Aspekte identifiziert eines betrifft di
 
 Auch beim Einsatz von Kabeln mit großen Querschnitten ≥ 120 mm² (@Kabelproblem[Abb.] Rot Markiert) sich erhebliche Schwierigkeiten. Aufgrund der hohen Steifigkeit dieser Kabel gestaltet sich die Verlegung aufwendig. Zudem erfordert die Herstellung der Kabelverbindungen zusätzliche Arbeitsschritte, wie das Ablängen, Abisolieren, Verpressen mit geeigneten Kabelschuhen sowie die anschließende Montage. Neben dem hohen Zeitaufwand erfüllen Kabel darüber hinaus keine ästhetischen Anforderungen an eine geordnete und optisch ansprechende Verbindungstechnik.
 
-Anhand dieser aufgeführten Problembereiche besteht die Zielstellung darin, die Potenziale flexibler Kupferschienen systematisch zu bewerten. Der Fokus liegt hierbei auf den Aspekten Montagezeit, Materialkosten, Layout-Flexibilität, Teilevielfalt reduzieren sowie Fehlerreduktion. Neben einer vollständigen Umstellung auf flexible Kupferschienen wird auch der teilweise Einsatz flexibler Alternativen betrachtet. Es ist denkbar, dass flexible Kupferschienen insbesondere in komplexen oder platzkritischen Bereichen des Schaltschranks einen wirtschaftlichen und technischen Vorteil bieten. Hierdurch soll eine effizientere Engineering-Phase und Produktion geschaffen werden mit gleichzeitiger reduktion der Materialkosten.
+Anhand dieser aufgeführten Problembereiche besteht die Zielstellung darin, die Potenziale flexibler Kupferschienen systematisch zu bewerten. Der Fokus liegt hierbei auf den Aspekten Montagezeit, Materialkosten, Layout-Flexibilität, Teilevielfalt reduzieren sowie Fehlerreduktion. Neben einer vollständigen Umstellung auf flexible Kupferschienen wird auch der teilweise Einsatz flexibler Alternativen betrachtet. Es ist denkbar, dass flexible Kupferschienen insbesondere in komplexen oder platzkritischen Bereichen des Schaltschranks einen wirtschaftlichen und technischen Vorteil bieten. Hierdurch soll eine effizientere Engineering-Phase und Produktion geschaffen werden mit gleichzeitiger Reduktion der Materialkosten.
 
 Daraus ergeben sich drei Handlungsoptionen, die im Rahmen der weiteren Analyse untersucht und bewertet werden:
 
@@ -94,12 +76,12 @@ Darüber hinaus werden Planungsaufwände im Engineering sowie Einbau- und Bearbe
 == Beschreibung der Handlungsoptionen
 Anschließend werden die relevanten Handlungsoptionen identifiziert und beschrieben.
 
- - Option 1: Beibehaltung des Status quo Diese Option entspricht dem aktuellen Stand, bei dem weiterhin ausschließlich starre Kupferschienen und Kabel eingesetzt werden. Auf Änderungen wird verzichtet, da alternative Ansätze entweder als wirtschaftlich nicht tragfähig oder aufgrund des hohen Planungsaufwands nicht praktikabel eingestuft werden.
+ Option 1, Beibehaltung des Status quo Diese Option entspricht dem aktuellen Stand, bei dem weiterhin ausschließlich starre Kupferschienen und Kabel eingesetzt werden. Auf Änderungen wird verzichtet, da alternative Ansätze entweder als wirtschaftlich nicht tragfähig oder aufgrund des hohen Planungsaufwands nicht praktikabel eingestuft werden.
 
- - Option 2: Vollständige Umstellung auf flexible Kupferschienen Diese Option sieht eine komplette Substitution aller starren Standardschienen durch flexible Kupferschienen im Schaltschrankdesign vor. Die Umstellung würde die Anzahl der Einzelteile signifikant reduzieren, was wiederum zu geringeren Lagerkosten führen kann. Die Anpassung der flexiblen Schienen an bestehende Konstruktionen erfolgt durch das Engineering-Team, das auf Basis der bisherigen Schienengeometrien entsprechende Varianten entwickelt.
+ Option 2, Vollständige Umstellung auf flexible Kupferschienen Diese Option sieht eine komplette Substitution aller starren Standardschienen durch flexible Kupferschienen im Schaltschrankdesign vor. Die Umstellung würde die Anzahl der Einzelteile signifikant reduzieren, was wiederum zu geringeren Lagerkosten führen kann. Die Anpassung der flexiblen Schienen an bestehende Konstruktionen erfolgt durch das Engineering-Team, das auf Basis der bisherigen Schienengeometrien entsprechende Varianten entwickelt.
 
- - Option 3: Teilumstellung mit kombiniertem Einsatz starrer und flexibler Kupferschienen Diese Option verfolgt einen hybriden Ansatz, bei dem starre und flexible Kupferschienen gezielt kombiniert werden. Flexible Schienen kommen dort zum Einsatz, wo aufgrund von Platzmangel oder baulichen Einschränkungen der Einsatz starrer Schienen nicht oder nur mit erheblichem Aufwand möglich ist. Auch bei dieser Variante würde sich die Teileanzahl verringern, was sich positiv auf die Lagerhaltungskosten auswirkt.
-== Erhebung relevanter Daten
+ Option 3, Teilumstellung mit kombiniertem Einsatz starrer und flexibler Kupferschienen Diese Option verfolgt einen hybriden Ansatz, bei dem starre und flexible Kupferschienen gezielt kombiniert werden. Flexible Schienen kommen dort zum Einsatz, wo aufgrund von Platzmangel oder baulichen Einschränkungen der Einsatz starrer Schienen nicht oder nur mit erheblichem Aufwand möglich ist. Auch bei dieser Variante würde sich die Teileanzahl verringern, was sich positiv auf die Lagerhaltungskosten auswirkt.
+== Erhebung relevanter Daten <relevanteDaten>
 In diesem Schritt werden sämtliche quantitativen und qualitativen Daten zusammengeführt, die für die spätere Bewertung der Handlungsalternativen erforderlich sind. Dazu zählen sowohl Kostenfaktoren (z.B. Material-, Montage- und Wartungskosten) als auch Nutzenkomponenten wie Zeitersparnis und Flexibilität. Die Datengrundlage umfasst interne Quellen, externe Angebote sowie praxisbasierte Erfahrungswerte. In den letzten 5 Jahren wurden im 25 H4 Module pro Jahr verkauft und 35,2 H6 Module. Bei Sonderkonstruktionen variiert die Stückzahl stark, im Durchschnitt werden jedoch ca. 15 solcher Projekte mit ähnlichen Anforderungen pro Jahr realisiert. Es wurden Lieferantenangebote für flexible Kupferschienen von der Firma nVent und EMS eingeholt. Die Preise der aktuellen Schienen wurden von ABB bereitgestellt.
 
 
@@ -113,18 +95,18 @@ Die Materialkosten betragen:
   table.header(
    [], [*H4-Schienen*], [*H6-Schienen*], [*Kabelverbindungen*],
   ),
-  [ABB],
-  [60,254 €/kg],
-  [19,54 €/kg],
-  [15,19 €/m \
-  8,00 € für Kabelschuhe],
-  [nVent],
-  [27,71 €/kg],
-  [27,71 €/kg],
-  [16,34 €/m],
-  [EMS],
-  [25,26 €/kg],
-  [25,26 €/kg],
+  [ABB (@abbpreise)],
+  [60,25€/kg],
+  [19,54€/kg],
+  [15,19€/m \
+  8,00€ für Kabelschuhe],
+  [nVent (@nVentpreise)],
+  [27,71€/kg],
+  [27,71€/kg],
+  [16,34€/m],
+  [EMS (@emsangebot)],
+  [25,26€/kg],
+  [25,26€/kg],
   [ kein Angebot]
   )   
 )<Materialkosten>
@@ -168,7 +150,7 @@ Die wirtschaftliche Bewertung der Handlungsoptionen wird mit klassischen Verfahr
 === Materialkostenvergleich <Materialkostenvergleich>
 Im Folgenden werden die in @Problemstellen sowie @Kabelproblem identifizierten Schienen- und Sonderkonstruktionsbereiche hinsichtlich ihrer Materialkosten auf Grundlage der in @Materialkosten ausgewiesenen Kilopreise systematisch untersucht. Es werden zuerst die aktuell eingesetzten starren Einzelschienen je Modul H4 und H6 zu modulspezifischen Gesamtmaterialkosten unter Berücksichtigung von Stückpreis und Gewicht zusammengefasst. Schritt 2 stellt diesen Ist-Kosten die Angebotspreise der flexiblen Alternativen (nVent, EMS) gegenüber, um absolute sowie relative Einsparpotenziale (€/Modul und €/kg) zu quantifizieren. 
 #figure(
-  caption: [Verbindungenvergleich],
+  caption: [Verbindungsvergleich],
   table(
   columns: (auto,auto, auto, auto, auto),
   inset: 10pt,
@@ -179,46 +161,46 @@ Im Folgenden werden die in @Problemstellen sowie @Kabelproblem identifizierten S
   [Busbar H3/4 U\
   Busbar H3/4 V\
   Busbar H3/4 W],
-  [79,68 €\
-  101,35 €\
-  131,56 €],
+  [79,68€\
+  101,35€\
+  131,56€],
   [1,3 kg\
   1,7 kg\
   2,2 kg],
-  [61,29 €/kg\
-  59,62 €/kg\
-  59,80 €/kg],
-  [313,23 €],
+  [61,29€/kg\
+  59,62€/kg\
+  59,80€/kg],
+  [313,23€],
   [Busbar H6 U\
   Busbar H6 V\
   Busbar H6 W\
   Verbinder H6 ],
-  [79,68 €\
-  101,35 €\
-  131,56 €\
-  36,44 €],
+  [79,68€\
+  101,35€\
+  131,56€\
+  36,44€],
   [6,7 kg\
   7,2 kg\
   7 kg\
   1,4 kg],
-  [17,43 €/kg\
-  17,28 €/kg\
-  17,42 €/kg\
-  26,03 €/kg],
-  [572,49 €],
+  [17,43€/kg\
+  17,28€/kg\
+  17,42€/kg\
+  26,03€/kg],
+  [572,49€],
   [Kabel\
   Kabelschuhe\
   ],
-  [15,19 €\
-  4 €\
+  [15,19€\
+  4€\
  ],
   [4,28 kg\
   0,35 kg\
   ],
-  [14,13 €/kg\
+  [14,13€/kg\
   -\
   ],
-  [66,13 €],
+  [66,13€],
   )   
 )<Schienenvergleich>
 Auf Basis der ermittelten Gesamtpreise der jeweiligen Schienenpakete (vgl. @Schienenvergleich) erfolgt im nächsten Schritt der Vergleich mit den Angebotsdaten der Anbieter nVent und EMS. Hierzu werden die Gesamtpreise der bestehenden Lösungen den kalkulierten Kosten der flexiblen Alternativen gegenübergestellt, um das Einsparungspotenzial systematisch zu quantifizieren.
@@ -233,17 +215,17 @@ Auf Basis der ermittelten Gesamtpreise der jeweiligen Schienenpakete (vgl. @Schi
    [], [*ABB*], [*nVent*], [*EMS*],
   ),
   [Kilopreise],
-  [60,24 €/kg],
-  [27,71 €/kg],
-  [26,26 €/kg],
+  [60,24€/kg],
+  [27,71€/kg],
+  [26,26€/kg],
   [H4-Schienen],
-  [313,23 €],
-  [144,07 €],
-  [136,55 €],
+  [313,23€],
+  [144,07€],
+  [136,55€],
   [H6-Schienen],
-  [572,49 €],
-  [695,40 €],
-  [584,23 €],
+  [572,49€],
+  [695,40€],
+  [584,23€],
  
 
   )   
@@ -295,31 +277,31 @@ $ "Gewinn" = "Erlöse" - "Gesamtkosten"\
    [], [*nVent*], [*EMS*],
   ),
   [*Abschreibungen*],
-  [550 €],
-  [550 €],
+  [550€],
+  [550€],
   [*Kalkulatorische Zinsen*],
-  [68,75 €],
-  [68,75 €],
+  [68,75€],
+  [68,75€],
   [*Gesamtkosten*],
-  [618,75 €],
-  [618,75 €],
+  [618,75€],
+  [618,75€],
   [*Erlöse*],
-  [4.229 €],
-  [4.417 €],
+  [4.229€],
+  [4.417€],
   [*Gewinn*],
-  [3.610,255 €],
-  [3.798,25 €]
+  [3.610,255€],
+  [3.798,25€]
   )   
 )<Gesamtkosten>
 
-Aus @Gesamtkosten erkennt man das der Lieferant EMS im Vergleich zu nVent höhere Erlöse und Gewinne erzielt. Dies bedeutet das hier die flexiblen Kupferschienen wirtschaftlich attraktiver sind. EMS hat aber keine alternativen für Sonderkonstruktionen wie nVent, deshalb ist hier nVent im Vorteil. 
+Aus @Gesamtkosten erkennt man dass der Lieferant EMS im Vergleich zu nVent höhere Erlöse und Gewinne erzielt. Dies bedeutet das hier die flexiblen Kupferschienen wirtschaftlich attraktiver sind. EMS hat aber keine alternativen für Sonderkonstruktionen wie nVent, deshalb ist hier nVent im Vorteil.
 
 === Rentabilitätsrechnung <Rentabilitätsrechnung>
 Die Investition wird dabei anhand ihrer Rentabilität beurteilt und wählt diejenige mit dem höheren Wert. Man wählt dann diejenige Alternative mit dem höheren Wert (vgl. @RentabilitaetsrechnungFormelBeispiel).
 
 $ "Rentabilität" = ("Gewinn"+"kalkulatorische Zinsen")/"gebundenes Kapital" *100 $
 
-Hier lassen sich aus @Gesamtkosten die Daten zum errechnen der Rentabilität entnehmen. Um nochmal genau zu zeigen wie Rentabel die betrachteten H4-Alternativen sind, werden die Werte in die Formel eingesetzt.
+Hier lassen sich aus @Gesamtkosten die Daten zum errechnen der Rentabilität entnehmen. Um nochmal genau zu zeigen wie rentabel die betrachteten H4-Alternativen sind, werden die Werte in die Formel eingesetzt.
 #figure(
   caption: [Rentabilitätsrechnung],
   table(
@@ -330,20 +312,20 @@ Hier lassen sich aus @Gesamtkosten die Daten zum errechnen der Rentabilität ent
    [], [*nVent*], [*EMS*],
   ),
   [*Gewinn*],
-  [3610,255 €],
-  [3.798,25 €],
+  [3610,25€],
+  [3.798,25€],
   [*kalkulatorische Zinsen*],
-  [68,75 €],
-  [68,75 €],
+  [68,75€],
+  [68,75€],
   [*gebundenes Kapital*],
-  [1375 €],
-  [1375 €],
+  [1375€],
+  [1375€],
   [*Rentabilität*],
   [267,5 %],
   [281,24 %]
   )   
 )<Rentabilitaet>
-Die Rentabilitätsrechnung in @Rentabilitaet zeigt, dass beide Lieferanten eine sehr hohe Rentabilität im vergleich zu den aktuell Verwendeten Schienen beim H4-Modul aufweisen. EMS schneidet mit 281,24 % etwas besser ab als nVent mit 267,5 %. Dies unterstreicht die wirtschaftliche Attraktivität der Investition in flexible Kupferschienen, insbesondere im Vergleich zu anderen möglichen Investitionen. Beide Optionen bieten eine hervorragende Rendite auf das eingesetzte Kapital, was sie zu attraktiven Alternativen für ABB macht.
+Die Rentabilitätsrechnung in @Rentabilitaet zeigt, dass beide Lieferanten eine sehr hohe Rentabilität im Vergleich zu den aktuell verwendeten Schienen beim H4-Modul aufweisen. EMS schneidet mit 281,24 % etwas besser ab als nVent mit 267,5 %. Dies unterstreicht die wirtschaftliche Attraktivität der Investition in flexible Kupferschienen, insbesondere im Vergleich zu anderen möglichen Investitionen. Beide Optionen bieten eine hervorragende Rendite auf das eingesetzte Kapital, was sie zu attraktiven Alternativen für ABB macht.
 
 
 === Kapitalwertmethode <Kapitalwertmethode>
@@ -357,11 +339,11 @@ Z_t = "Zahlungsstrom", r = "Kalkulationszinssatz", t = "Periode" \
 "NBW nVent" = 15.630,357€ - 2.750€ = 12.880,357€\
 "NBW EMS" = 16.444,43€ - 2.750€ = 13.694,43€ $
 
-Aus den NBW-Werten in @Kapitalwertmethode lässt sich ableiten, dass beide Optionen wirtschaftlich attraktiv sind. EMS erzielt mit 13.694,43 € den höheren Kapitalwert gegenüber nVent mit 12.880,357 €. Für H4-Module ist die Umstellung auf flexible Schienen damit unter rein finanziellen Gesichtspunkten zu bevorzugen, vorzugsweise mit EMS. Bei Bedarf an Sonderkonstruktionslösungen bleibt nVent aufgrund des Portfolios eine relevante Alternative. Die Ergebnisse sind konsistent mit @Amortisationsdauer und @Rentabilitaet und werden in @QualitativeBewertung um nicht-monetäre Kriterien ergänzt.
+Aus den NBW-Werten in @Kapitalwertmethode lässt sich ableiten, dass beide Optionen wirtschaftlich attraktiv sind. EMS erzielt mit 13.694,43€ den höheren Kapitalwert gegenüber nVent mit 12.880,36€. Für H4-Module ist die Umstellung auf flexible Schienen damit unter rein finanziellen Gesichtspunkten zu bevorzugen, vorzugsweise mit EMS. Bei Bedarf an Sonderkonstruktionslösungen bleibt nVent aufgrund des Portfolios eine relevante Alternative. Die Ergebnisse sind konsistent mit @Amortisationsdauer und @Rentabilitaet und werden in @QualitativeBewertung um nicht-monetäre Kriterien ergänzt.
 
 == Qualitative Bewertung <QualitativeBewertung>
 === Nutzwertanalyse <Nutzwertanalyse>
-Da nicht alle relevanten Aspekte monetär bewertbar sind, wird eine ergänzende qualitative Bewertung durchgeführt. Hierbei kommen Kriterien wie Layout-Flexibilität, Engineeringaufwand, Schulungsaufwand sowie der Montageaufwand zum Tragen. Diese Faktoren werden in einer Nutzwertanalyse (Scoring-Modell) erfasst, bei der zunächst die Kriterien beschrieben, gewichtet und anschließend die Optionen auf einer Skala von 1 bis 4 bewertet werden. 1 = gering, 2 = mittel, 3 = hoch, 4 = sehr hoch. Die Ergebnisse werden in einer Matrix dargestellt, und anschließend die gewichteten Punktwerte berechnet. Diese ergänzende Bewertung ermöglicht eine ganzheitliche Betrachtung der Handlungsoptionen im bezug auf die Qualitativen Aspekte (vgl. @NutzwertanalyseErklaerungUnda).
+Da nicht alle relevanten Aspekte monetär bewertbar sind, wird eine ergänzende qualitative Bewertung durchgeführt. Hierbei kommen Kriterien wie Layout-Flexibilität, Engineeringaufwand, Schulungsaufwand sowie der Montageaufwand zum Tragen. Diese Faktoren werden in einer Nutzwertanalyse (Scoring-Modell) erfasst, bei der zunächst die Kriterien beschrieben, gewichtet und anschließend die Optionen auf einer Skala von 1 bis 4 bewertet werden. 1 = gering, 2 = mittel, 3 = hoch, 4 = sehr hoch. Die Ergebnisse werden in einer Matrix dargestellt, und anschließend die gewichteten Punktwerte berechnet. Diese ergänzende Bewertung ermöglicht eine ganzheitliche Betrachtung der Handlungsoptionen in Bezug auf die qualitativen Aspekte (vgl. @NutzwertanalyseErklaerungUnda).
 === Montage- und Planungsaufwand <MontagePlanungsaufwand>
 Die Montagezeiten für starre Kupferschienen sind im Vergleich zu flexiblen Varianten deutlich höher. Dies liegt an der Notwendigkeit, Abstandshalter, Isolatoren und Schraubverbindungen zu verwenden, was den Einbauprozess verkompliziert und verlängert. Flexible Kupferschienen hingegen lassen sich einfacher und schneller installieren, da sie sich besser an die vorhandenen Gegebenheiten anpassen lassen. Dies führt zu einer erheblichen Reduktion der Montagezeiten um bis zu 50%, was nicht nur die Effizienz in der Fertigung steigert, sondern auch die Personalkosten pro Projekt senkt. Durch die verminderung der einzubauenden Teile wird auch der Planungsauswand im Engineering reduziert, da weniger Halterungsplatzierungen und Abstandsdefinitionen erforderlich sind. Insgesamt trägt dies zu einer signifikanten Verbesserung der Prozessabläufe bei und ermöglicht eine schnellere Reaktionsfähigkeit auf kundenspezifische Anforderungen.
 === Layout-Flexibilität <LayoutFlexibilitaet>
@@ -420,7 +402,7 @@ Die wesentlichen Risiken werden nach Eintrittswahrscheinlichkeit E und Auswirkun
     inset: 5pt,
     align: horizon,
     table.header([*Kategorie*], [*Risiko*], [*E*], [*A*], [*Maßnahmen*]),
-    [Lieferkette], [Abhängigkeit von Einzel-Lieferanten; Lieferzeit-/Preisschwankungen], [mittel], [hoch], [Rahmenverträge,\ Sicherheitsbestände],
+    [Lieferkette], [Abhängigkeit von Einem Lieferanten, Lieferzeit-/Preisschwankungen], [mittel], [hoch], [Rahmenverträge,\ Sicherheitsbestände],
     [Kosten], [Kupferpreis-\ Wechselkursvolatilität], [hoch], [mittel], [Gleitklauseln,\ Preis-Reviews],
     [Operation], [Anlaufverluste\ unterschätzte Montage-,\ Rüstzeiten], [mittel], [mittel\ -hoch], [Pilotserie, #acrs("SOP"), Zeitaufnahmen, Kaizen],
     [Qualität], [Biege-/Pressfehler\ höherer Kontaktwiderstand/Hotspots], [mittel], [hoch], [Arbeitsanweisungen, Tests,\ Prüfplan erweiterung],
@@ -464,7 +446,7 @@ Unter Umsetzung der Maßnahmen verbleibt ein moderates Rest-Risiko bei der Preis
 == Empfehlung der Handlungsoption <Empfehlung>
 Die Ergebnisse der quantitativen Bewertung zeigen, dass der Einsatz flexibler Kupferschienen für H4-Module unter den betrachteten Annahmen finanziell vorteilhaft ist. Sowohl die Amortisationsrechnung als auch die Rentabilitätsrechnung und der Nettobarwert belegen deutliche Vorteile gegenüber der bestehenden Lösung (vgl. @Amortisationsdauer, @Rentabilitaet, @Kapitalwertmethode). Dabei erzielt EMS im Mittel die etwas besseren Kapitalwerte und Gewinnbeiträge, während nVent aufgrund einer breiteren Variantenvielfalt für Sonderkonstruktionen eine relevante Alternative bleibt. Für H6-Module ergibt sich auf Materialkostenseite kein eindeutiger Vorteil, potenzielle Effekte entstehen hier primär über reduzierte Montage- und Engineeringzeiten und sind im Einzelfall zu verifizieren. Die qualitative Bewertung stützt dieses Bild. Die Nutzwertanalyse weist einem hybriden Ansatz die höchste Zielerreichung zu, da er wirtschaftliche Effekte mit Prozessstabilität und technischer Flexibilität verbindet (vgl. @Nutzwertanalyse).
 
-Vor diesem Hintergrund wird empfohlen, H4-Module standardmäßig auf flexible Kupferschienen umzustellen und eigentlich EMS als primäre Bezugsquelle zu etablieren, hier ist nur im Laufe dieser Arbeit ein interner Konflikt mit EMS aufgetreten und aus Integity-Gründen darf bei diesem Lieferanten nicht bestellt werden, dadurch wird nVent als qualifizierte Bezugsquelle für flexible Schienen und Kabelersatz etabliert. Für H6-Module sowie Sonderkonstruktionen bietet sich ein selektiver Einsatz flexibler Schienen an, insbesondere an platzkritischen oder arbeitsintensiven Stellen, im Übrigen sollte die bestehende Lösung beibehalten werden. Diese Ausrichtung maximiert den wirtschaftlichen Nutzen, ohne unverhältnismäßige Umstellungsrisiken in denjenigen Bereichen einzugehen, in denen die Materialkostenvorteile geringer ausfallen.
+Vor diesem Hintergrund wird empfohlen, H4-Module standardmäßig auf flexible Kupferschienen umzustellen und eigentlich EMS als primäre Bezugsquelle zu etablieren, während der Arbeit trat aber ein interner Compliance-Konflikt mit diesem Lieferanten auf, daher erfolgt aktuell keine Beschaffung bei diesem Lieferanten. Dadurch wird nVent als qualifizierte Bezugsquelle für flexible Schienen und Kabelersatz etabliert. Für H6-Module sowie Sonderkonstruktionen bietet sich ein selektiver Einsatz flexibler Schienen an, insbesondere an platzkritischen oder arbeitsintensiven Stellen, im Übrigen sollte die bestehende Lösung beibehalten werden. Diese Ausrichtung maximiert den wirtschaftlichen Nutzen, ohne unverhältnismäßige Umstellungsrisiken in denjenigen Bereichen einzugehen, in denen die Materialkostenvorteile geringer ausfallen.
 
 Die Umsetzung sollte stufenweise erfolgen. Zunächst wird eine Pilotphase mit Erstmusterprüfung und dokumentierten Biege-/Pressparametern aufgesetzt, flankiert von Schulungen für Montage und Engineering sowie der Einführung standardisierter Arbeitsanweisungen. Im Anschluss werden Serienfreigaben, Rahmenverträge mit Preisgleitklauseln und Sicherheitsbestände für oft verwendete Querschnitte etabliert. Ein begleitendes Monitoring über ein kompaktes #acrs("KPI")-Set (u.a. Montagezeit, Nacharbeitsquote, Ausschuss, Termintreue) stellt Transparenz über realisierte Effekte und Anlaufstabilität her. Die Risikoanalyse zeigt, dass bei Umsetzung dieser Maßnahmen ein moderates, beherrschbares Restrisiko verbleibt, besondere Aufmerksamkeit gilt Preis-/Lieferkettenschwankungen sowie der Anlaufkurve (vgl. @Risikoanalyse, @Szenarien).
 
