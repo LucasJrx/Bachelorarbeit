@@ -5,7 +5,7 @@
 
   ==  EMS-Angebot
     #figure( 
-        image("/chapters/Bachelor/EMS_Angebot.png", height: 86%,width: 100%,  fit: "stretch"),
+        image("/chapters/Bachelor/EMS_Angebot.png",width: 80%,  fit: "stretch"),
         caption: [EMS Angebot mit markierten Preis @weylandEigeneDarstellunga],
     )<emsangebot>
   == nVent-Preise

@@ -51,7 +51,7 @@
   show-acronyms: true,
   show-list-of-figures: true,
   show-list-of-tables: true,
-  show-formula-list: true,
+  show-formula-list: false,
   show-list-of-appendix: true,
   show-code-snippets: true,
   show-abstract: true,
@@ -187,8 +187,8 @@
   show heading.where(level: 1): it => {
     v(0em) + it + v(1em)
   }
-  show heading.where(level: 2): it => v(0em) + it + v(0.5em)
-  show heading.where(level: 3): it => v(0em) + it + v(0.5em)
+  show heading.where(level: 2): it => v(1em) + it + v(0.5em)
+  show heading.where(level: 3): it => v(1em) + it + v(0.5em)
 
   if (titlepage-content != none) {
     titlepage-content
@@ -416,6 +416,40 @@
     }
   }
 
+pagebreak()
+heading(level: 1, numbering: none, outlined: true)[Formelzeichen- und Einheitenverzeichnis]
+table(
+  columns: (1fr, 1fr, 2fr),
+  align: (center, center, left),
+  inset: 10pt,
+  [*Formelzeichen*], [*Einheit*], [*Beschreibung*],
+  [$A_O$],[m²],[Oberfläche Kupferschiene],
+  [$a$],[m],[Abstand mittig der Schienen],
+  [$alpha_"Cu"$],[1/K],[Temperaturkoeffizient von Kupfer],
+  [$b$],[mm],[Dicke],
+  [$d$],[mm],[Breite],
+  [$epsilon$],[-],[Emissionsgrad],
+  [$F$],[N],[Kraft],
+  [$h$],[W/$m^2K$],[Wärmeübergangskoeffizient],
+  [$I$],[A],[Strom],
+  [$I_"pk"$],[A],[Kurzschlussstroms],
+  [$K$],[-],[Schienen-Formfaktor],
+  [$l$],[mm],[Länge],
+  [$P_"Cu"$],[W],[Verlustleistung von Kupfer],
+  [$P_"konv"$],[W],[Konvektionsverlustleistung],
+  [$P_"strahl"$],[W],[Strahlungsverlustleistung],
+  [$R$],[$Omega$],[Widerstand],
+  [$r$],[$%$],[Kalkulationszinssatz],
+  [$rho_"Cu"$],[$Omega/m$],[Spezifischer Widerstand von Kupfer],
+  [$R(T_c)$],[$Omega$],[Temperaturabhängiger Widerstand],
+  [$sigma$],[W/$m^2K^4$],[Stefan-Boltzmann-Konstante],
+  [$T$],[-],[Betrachtungszeitraum],
+  [$T_a$],[°C],[Anfangs Temperatur],
+  [$T_c$],[°C],[Maximal Temperatur],
+  [$t$],[-],[Periode],
+  [$Z_0$],[€],[Anfangsinvestition],
+  [$Z_t$],[€],[Zahlungsstrom],
+)
   // Formelverzeichnis
 context {
     let elems = query(math.equation)

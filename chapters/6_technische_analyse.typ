@@ -13,7 +13,7 @@ Ausgehend von den in @FallstudieBeispielanwendung geplanten und konstruierten Sc
       image("/chapters/Bachelor/Lochen.jpg", width: 100%, fit: "stretch"),
       image("/chapters/Bachelor/Schneiden.jpg", width: 100%, fit: "stretch"),
     ),
-    caption: [Rittal-Werkbank - von links nach rechts: Biegen, Stanzen, Schneiden @weylandEigeneDarstellunga],
+    caption: [Rittal-Werkbank - links nach rechts: Biegen, Stanzen, Schneiden @weylandEigeneDarstellunga],
   )<Rittalwerkbank>
 
 Dadurch lassen sich die flexiblen Kupferschienen schnell, präzise und reproduzierbar an unterschiedliche Einbausituationen anpassen.
@@ -55,13 +55,23 @@ Um komplexere Geometrien wie in @FallstudieBeispielanwendung zu erreichen, wird 
 Abschließend lässt sich festhalten, dass die Bearbeitung flexibler Kupferschienen an der vorhandenen Rittal-Bearbeitungswerkbank schnell, einfach, präzise und reproduzierbar durchgeführt werden kann. Die Werkbank bietet die notwendigen Funktionen zum Schneiden, Abisolieren, Stanzen und Biegen, um flexible Kupferschienen an unterschiedliche Einbausituationen anzupassen. Durch die Verwendung geeigneter Werkzeuge und Vorrichtungen wird eine hohe Qualität und Maßhaltigkeit der bearbeiteten Schienen sichergestellt. Insgesamt trägt die mechanische Bearbeitung flexibler Kupferschienen an der Rittal-Werkbank zu einer effizienten und flexiblen Fertigung im Schaltschrankbau bei und ist damit gut für den Einsatz in der Praxis geeignet.
 
 == Mechanische Belastbarkeit und Kurzschlussfestigkeit <MechanischeBelastbarkeitKurzschlussfestigkeit>
-Flexible Kupferschienen müssen mechanischen Belastungen standhalten, die im Betrieb auftreten können, insbesondere bei Kurzschlussereignissen. Die mechanische Belastbarkeit wird durch Normen wie IEC 61439-1 (vgl. @IEC614391), IEC 60865-1 (vgl. @IEC608651), UL 508A (vgl. @UL508) sowie den ABB Design-Guide (vgl. @deffaaDesignHandbuchDCcabinets2024) definiert, die Anforderungen an die Dimensionierung und Auslegung von Sammelschienen festlegen. Flexible Kupferschienen müssen so konstruiert sein, dass sie den elektrodynamischen Kräften, die bei Kurzschlussströmen entstehen, sicher widerstehen können, ohne dass es zu Verformungen oder Beschädigungen kommt. Dies erfordert eine sorgfältige Auswahl von Materialstärke, Breite und Befestigungsmethoden, um eine ausreichende Stabilität zu gewährleisten. Der Nachweis kann mittels Berechnungen und Prüfungen geführt werden. Die Prüfungen erfolgen extern in einem spezialisierten TÜV-Labor in Berlin, das für solche Tests ausgelegt ist und nach den internen Standards der ABB AG testet und prüft. Das Kurzschlussverhalten lässt sich theoretisch wie folgt berechnen @deffaaDesignHandbuchDCcabinets2024[S. 19-20]:
-$ F = 8,308 * -10^4 * (K * I_"RMS"^2) / d \ = 8,308 * -10^4 * (1,1 * 65"kA"^2) / (0,085m) = 45,43"kN"/m \ 
-"mit" F: "Maximale Kraft pro Meter Schiene beim Kurzschluss" \ 
-I_"RMS": "Scheitelwert des Kurzschlussstroms = 65 kA" \ 
-K: "Schienen-Formfaktor" = 1,1 \ 
-d: "Abstand zwischen den Schienen" = 0,085 m $
+Flexible Kupferschienen müssen mechanischen Belastungen standhalten, die im Betrieb auftreten können, insbesondere bei Kurzschlussereignissen. Die mechanische Belastbarkeit wird durch Normen wie IEC 61439-1 @IEC614391[Kap.10.11], UL 508A @UL508[SB 3.2] sowie den ABB Design-Guide @deffaaDesignHandbuchDCcabinets2024[S. 19-20] definiert, die Anforderungen an die Dimensionierung und Auslegung von Sammelschienen festlegen. Flexible Kupferschienen müssen so konstruiert sein, dass sie den elektrodynamischen Kräften, die bei Kurzschlussströmen entstehen, sicher widerstehen können, ohne dass es zu Verformungen oder Beschädigungen kommt. Dies erfordert eine sorgfältige Auswahl von Materialstärke, Breite und Befestigungsmethoden, um eine ausreichende Stabilität zu gewährleisten. Der Nachweis kann mittels Berechnungen und Prüfungen geführt werden. Die Prüfungen erfolgen extern in einem spezialisierten TÜV-Labor in Berlin, das für solche Tests ausgelegt ist und nach den internen Standards der ABB AG testet und prüft. Die Kurzschlusskraft lässt sich mit den Werten aus @wertesKurzschlusskraft wie folgt berechnen @deffaaDesignHandbuchDCcabinets2024[S. 19-20]:
+$ F = 8,308 * -10^4 * (K * I_"pk"^2) / a  = 45,43"kN"/m $
 
+#figure(
+  caption: [Kurzschlusskraft Werte],
+  table(
+  columns: (auto, auto,auto,),
+  inset: 10pt,
+  align: (center,center, center),
+  table.header(
+   [],[*Formelzeichen*], [*Wert*],
+  ),
+  [Schienen-Formfaktor],[$K$],[$1,1$],
+  [Abstand mittig der Schienen],[$a$],[0,085m],
+  [Kurzschlussstroms],[$I_"pk"$],[$65 "kA"$],
+  )   
+)<wertesKurzschlusskraft> 
 Nach der Berechnung ergibt sich eine maximale Kraft pro Meter Schiene beim Kurzschluss von 45,43 kN/m. Diese Kraft muss von der flexiblen Kupferschiene sicher aufgenommen werden können, ohne dass es zu Verformungen oder Beschädigungen kommt. Die Befestigungspunkte und die Materialstärke der Schiene sind entsprechend auszulegen, um diese Kräfte sicher abzuleiten. Die Kraft kann in Inventor 2019 simuliert werden, um zu beurteilen, wie sich die Schiene bei dieser Belastung verhält. Dabei wird die zuvor modellierte Schiene in der Software geladen und die berechnete Kraft von 45,43 kN/m aufgebracht. Die Befestigungspunkte werden ebenfalls berücksichtigt, um realistische Randbedingungen zu schaffen. Anschließend wird die Simulation durchgeführt und die Verformung der Schiene analysiert.
 
 #figure(
@@ -76,10 +86,10 @@ Wie in @Belastungssimulation zu sehen, wird die Kraft von rechts auf die Schiene
   caption: [Belastungssimulation @weylandEigeneDarstellunga],
 )<Belastungssimulation2>
 
-Wie in @Belastungssimulation2 zu erkennen ist, wurde durch das Hinzufügen eines weiteren Haltepunktes die Verformung in Kraftrichtung auf 1,88 mm reduziert. Dies ist ein zufriedenstellendes Ergebnis; die Schiene ist somit für die mechanische Belastung durch Kurzschlussströme ausgelegt. Insgesamt zeigt die Analyse, dass flexible Kupferschienen durch eine sorgfältige Auslegung und Befestigung den mechanischen Belastungen im Betrieb, insbesondere bei Kurzschlussereignissen, sicher standhalten können. Die Kombination aus theoretischer Berechnung und praktischer Simulation ermöglicht eine fundierte Erstbewertung der mechanischen Belastbarkeit.
+Wie in @Belastungssimulation2 zu erkennen ist, wurde durch das Hinzufügen eines weiteren Haltepunktes welcher die Schiene über eine Quetschverbindung sichert, die Verformung in Kraftrichtung auf 1,88 mm reduziert. Dies ist ein zufriedenstellendes Ergebnis; die Schiene ist somit für die mechanische Belastung durch Kurzschlussströme ausgelegt. Insgesamt zeigt die Analyse, dass flexible Kupferschienen durch eine sorgfältige Auslegung und Befestigung den mechanischen Belastungen im Betrieb, insbesondere bei Kurzschlussereignissen, sicher standhalten können. Die Kombination aus theoretischer Berechnung und praktischer Simulation ermöglicht eine fundierte Erstbewertung der mechanischen Belastbarkeit.
 
 == Kontaktierung und Montageaufwand <KontaktierungMontageaufwand>
-Die Kontaktierung flexibler Kupferschienen erfolgt in der Regel über Schraubverbindungen, bei denen die Schiene mit Sammelschienen oder den Anschlussklemmen der elektrischen Geräte verbunden wird (@Montage[Abb.]). Bei der Kontaktierung ist darauf zu achten, dass die Enden der flexiblen Kupferschienen plan sind, damit der Übergangswiderstand minimal bleibt; dies wird durch die Bearbeitung wie in @MechanischeBearbeitungAnpassungsfähigkeit beschrieben gewährleistet. Der Montageaufwand wird durch die Flexibilität der Schienen reduziert, da sie sich leichter an unterschiedliche Einbausituationen anpassen lassen und weniger mechanische Bearbeitung erfordern. Dies führt zu kürzeren Montagezeiten und einer geringeren Fehleranfälligkeit im Vergleich zu starren Kupferschienen, die oft in mehreren Segmenten montiert werden müssen. Flexible Kupferschienen können zudem mit standardisierten Befestigungselementen und Werkzeugen installiert werden, was den Montageprozess weiter vereinfacht.
+Die Kontaktierung flexibler Kupferschienen erfolgt in der Regel über Schraubverbindungen, bei denen die Schiene mit Sammelschienen oder den Anschlussklemmen der elektrischen Geräte verbunden wird (@Montage[Abb.]). Bei der Kontaktierung ist darauf zu achten, dass die Enden der flexiblen Kupferschienen plan sind, damit der Übergangswiderstand minimal bleibt; dies wird durch die Bearbeitung wie in @MechanischeBearbeitungAnpassungsfähigkeit beschrieben gewährleistet. Der Montageaufwand wird durch die Flexibilität der Schienen reduziert, da sie sich leichter an unterschiedliche Einbausituationen anpassen lassen und weniger mechanische Bearbeitung erfordern. Dies führt zu kürzeren Montagezeiten und einer geringeren Fehleranfälligkeit im Vergleich zu starren Kupferschienen, die oft in mehreren Segmenten montiert werden müssen. Flexible Kupferschienen können zudem mit standardisierten Befestigungselementen und Werkzeugen installiert werden, was den Montageprozess weiter vereinfacht @IEC612381[F.3; F.8].
 
 #figure(
   grid(
@@ -95,62 +105,50 @@ Die Kontaktierung flexibler Kupferschienen erfolgt in der Regel über Schraubver
 Die Montage der flexiblen Kupferschienen wurde in einem Test-Schaltschrank durchgeführt. Dabei wurde die flexible Kupferschiene in den Schaltschrank eingelegt und mit den vorhandenen Befestigungspunkten verschraubt. Die Montagezeit reduzierte sich, da die Geometrie der flexiblen Kupferschiene vorteilhafter ist als die der starren Kupferschiene. Zudem werden weniger Anschraubpunkte benötigt, da die flexible Kupferschiene in einem Stück gefertigt wurde; ein Abfangen der Schiene ist nicht mehr erforderlich. Diese Erkenntnis stützt die in @Wirtschaftsanalyse getroffene Annahme, dass der Montageaufwand durch den Einsatz flexibler Kupferschienen signifikant reduziert werden kann.
 
 == Leitfähigkeit und Stromtragfähigkeit <LeitfähigkeitStromtragfähigkeit>
-Die elektrische Leitfähigkeit von Kupfer ist ein entscheidender Faktor für die Stromtragfähigkeit von Kupferschienen. Da ABB und nVent beide Cu-ETP (vgl. @DatenblaetterKupferverband, @NVentERIFLEXFlexible[S. 10]) für die Schienen verwenden, weisen diese eine sehr hohe Leitfähigkeit auf. Um die Stromtragfähigkeit der in @FallstudieBeispielanwendung konstruierten flexiblen Kupferschiene zu bewerten, wird sie zunächst theoretisch hergeleitet (vgl. @CopperBusbarsGuidance @IEC60890 @IEC614391) und anschließend durch einen Test im Prüffeld Praktisch überprüft. Die Stromtragfähigkeit wird durch Normen wie IEC 61439-1 (vgl. @IEC614391), IEC 60890 (vgl. @IEC60890), UL 508A (vgl. @UL508) sowie internen ABB-Richtlinien (vgl. @deffaaDesignHandbuchDCcabinets2024) definiert, die spezifische Anforderungen an die Dimensionierung und Auslegung von Sammelschienen stellen. Flexible Kupferschienen müssen so ausgelegt sein, dass sie die geforderten Ströme sicher führen können, ohne dass es zu einer Überschreitung des zulässigen Schienentemperatur von im Design-Guide festgelegten 90 °C kommt oder übermäßig mechanisch belastet werden. Im ersten Schritt wird die Stromtragfähigkeit der zu prüfenden flexiblen Kupferschiene mit einem Querschnitt von 200 mm² und einer Länge von 296 mm bei einer Umgebungstemperatur von 40 °C und einer zulässigen Schienentemperatur von 90 °C berechnet. Diese Werte entsprechen typischen Betriebsbedingungen, die laut Design-Guide zulässig sind. Dabei werden sowohl die Konvektion als auch die Strahlung als Wärmeabfuhrmechanismen berücksichtigt. Die Berechnung erfolgt über ein selbst geschriebenes Python-Skript, das den errechneten Temperaturverlauf mit matplotlib visualisiert und den Strom bei 90 °C Schienentemperatur anzeigt, der maximal erreicht werden kann. Die Berechnung basiert auf folgenden Gleichungen mit den Werten die in @WerteStromtragfähigkeit zusammengetragen wurden:
+Die elektrische Leitfähigkeit von Kupfer ist ein entscheidender Faktor für die Stromtragfähigkeit von Kupferschienen. Da ABB und nVent beide Cu-ETP  @DatenblaetterKupferverband, @NVentERIFLEXFlexible[S. 10] für die Schienen verwenden, weisen diese eine sehr hohe Leitfähigkeit auf. Um die Stromtragfähigkeit der in @FallstudieBeispielanwendung konstruierten flexiblen Kupferschiene zu bewerten, wird sie zunächst theoretisch hergeleitet @CopperBusbarsGuidance @IEC614391[Kap.10.10] und anschließend durch einen Test im Prüffeld Praktisch überprüft. Die Stromtragfähigkeit wird durch Normen wie IEC 61439-1 @IEC614391[Kap.10.10], UL 508A @UL508[SB3.2] sowie internen ABB-Richtlinien  @deffaaDesignHandbuchDCcabinets2024 definiert, die spezifische Anforderungen an die Dimensionierung und Auslegung von Sammelschienen stellen. Flexible Kupferschienen müssen so ausgelegt sein, dass sie die geforderten Ströme sicher führen können, ohne dass es zu einer Überschreitung des zulässigen Schienentemperatur von im Design-Guide festgelegten 90 °C kommt oder übermäßig mechanisch belastet werden. Im ersten Schritt wird die Stromtragfähigkeit der zu prüfenden flexiblen Kupferschiene mit einem Querschnitt von 200 mm² und einer Länge von 296 mm bei einer Umgebungstemperatur von 40 °C und einer zulässigen Schienentemperatur von 90 °C berechnet. Diese Werte entsprechen typischen Betriebsbedingungen, die laut Design-Guide zulässig sind. Dabei werden sowohl die Konvektion als auch die Strahlung als Wärmeabfuhrmechanismen berücksichtigt. Die Berechnung erfolgt über ein selbst geschriebenes Python-Skript, das den errechneten Temperaturverlauf mit matplotlib visualisiert und den Strom bei 90 °C Schienentemperatur anzeigt, der maximal erreicht werden kann. Die Berechnung basiert auf folgenden Gleichungen mit den folgenden Werten 
+
+$ "Joule'sches Gesetz der Verlustleistung:" P_"Cu" = I^2 * R(T_c) $<Formel6> 
+$ R(T_c) = rho_"Cu" * (1 + alpha_"Cu" * (T_c - T_a)) * (l / (b * d))\ $<Formel7> 
+$ A_O= 2l b+2l d+2d b $<Formel8> 
+$ "Abgeführte Wärmeleistung = Konvektion + Strahlung:" \ 
+P_"konv" = h * A_O * (T_c - T_a) \ 
+P_"strahl" = epsilon * sigma * A_O * [(T_c + 273,15)^4 - (T_a + 273,15)^4]\ $<Formel9>   
+$ "Stationäres Gleichgewicht:" P_"Cu" = P_"konv" + P_"strahl"  $ <Formel10>
+Jetzt werden @Formel6, @Formel7, @Formel8 und @Formel9 in @Formel10 eingesetzt und nach $I$ umgestellt ergibt sich:
+$ I = sqrt((h * A_O * (T_c - T_a) + epsilon * sigma * A_O * [(T_c + 273,15)^4 - (T_a + 273,15)^4]) / R(T_c)) $ 
 
 #figure(
-  caption: [Werte Stromtragfähigkeit],
+  caption: [Stromtragfähigkeit Werte],
   table(
-  columns: (auto,auto, auto,),
+  columns: (auto, auto,auto,),
   inset: 10pt,
-  align: horizon,
-  [$l$],
-  [Länge],
-  [$296"mm"$],
-  [$b$],
-  [breite der Schiene],
-  [$40"mm"$],
-  [$d$],
-  [dicke der Schiene],
-  [$5"mm"$],
-  [$A_O$],
-  [Oberfläche der Schiene],
-  [$2l b+2l d+2d b$],
-  [$h$],
-  [Wärmeübergangskoeffizient],
-  [$8 W/(m^2K)$],
-  [$epsilon$],
-  [Emissionsgrad],
-  [$0,6$],
-  [$sigma$],
-  [Stefan-Boltzmann-Konstante],
-  [$5,67 * 10^-8 W/(m^2K^4)$],
-  [$T_a$],
-  [Anfangstemperatur Umgebung],
-  [$40 °C$],
-  [$T_c$],[Maximal Temperatur],[$90 °C$],
-  [$R(T_c)$],[Temperaturabhängiger Widerstand],[$(rho_20 * (1 + alpha * (T_c - 20))) * (l / (b * d))$],
-  [$rho_20$],[Spezifischer Widerstand bei 20 °C],[$1,72 * 10^-8 Omega/m$],
-  [$alpha$],[Temperaturkoeffizient],[$0,00393 1/K$],
+  align: (center,center, center),
+  table.header(
+   [],[*Formelzeichen*], [*Wert*],
+  ),
+  [Wärmeübergangskoeffizient],[$h$],[$8 W/(m^2K)$],
+  [Emissionsgrad],[$epsilon$],[0,6],
+  [Stefan-Boltzmann-Konstante],[$sigma$],[$5,67 * 10^-8 W/(m^2K^4)$],
+  [Anfangstemperatur],[$T_a$],[40 °C],
+  [Endtemperatur],[$T_c$],[90 °C],
+  [Spezifischer Widerstand von Kupfer],[$rho_"Cu"$],[$1,72 * 10^-8 Omega/m$],
+  [Temperaturkoeffizient von Kupfer],[$alpha_"Cu"$],[$0,00393 1/K$],
+  [Schienen Länge],[$l$],[$0,296 m$],
+  [Schienen Breite],[$b$],[$0,02 m$],
+  [Schienen Dicke],[$d$],[$0,005 m$],
   )   
-)<WerteStromtragfähigkeit>
-
-$ "1. Joule'sches Gesetz der Verlustleistung:"\ P_"Cu" = I^2 * R(T_c) \ 
-"2. Abgeführte Wärmeleistung = Summe aus Konvektion + Strahlung:" \ 
-"Konvektion:" P_"konv" = h * A_O * (T_c - T_a) \ 
-"Strahlung:" P_"strahl" = epsilon * sigma * A_O * [(T_c + 273,15)^4 - (T_a + 273,15)^4] \ 
-"3. Stationäres Gleichgewicht:"\ P_"Cu" = P_"konv" + P_"strahl" \ 
-"4. Einsetzen und nach" I "auflösen:"\ I_N = sqrt((h * A_O * (T_c - T_a) + epsilon * sigma * A_O * [(T_c + 273,15)^4 - (T_a + 273,15)^4]) / R(T_c)) $
-(vgl. @CopperBusbarsGuidance @IEC60890 @IEC614391)
+)<wertesttomtragfähigkeit> 
 
 
 
-Mit den genannten Werten ergibt sich folgendes Diagramm, auf der X-Achse ist die Schienentemperatur in °C und auf der Y-Achse die Stromstärke in A aufgetragen. Die blaue Linie zeigt den Verlauf der Stromtragfähigkeit in Abhängigkeit von der Schienentemperatur. Der Schnittpunkt bei 90 °C Schienentemperatur gibt die maximale Stromtragfähigkeit an, die die flexible Kupferschiene unter den gegebenen Bedingungen sicher führen kann.
+
+Mit den in @wertesttomtragfähigkeit genannten Werten ergibt sich folgendes Diagramm, auf der X-Achse ist die Schienentemperatur in °C und auf der Y-Achse die Stromstärke in A aufgetragen. Die blaue Linie zeigt den Verlauf der Stromtragfähigkeit in Abhängigkeit von der Schienentemperatur. Der Schnittpunkt bei 90 °C Schienentemperatur gibt die maximale Stromtragfähigkeit an, die die flexible Kupferschiene unter den gegebenen Bedingungen sicher führen kann.
 #figure(
   image("/chapters/Bachelor/Stromtragfähigkeit90.png", width: 70%, fit: "stretch"),
   caption: [Errechnete Stromtragfähigkeit bei 90 °C Schienentemperatur @weylandEigeneDarstellunga],
 )<MaximalerStrom>
 
-Im Diagramm ist zu erkennen, dass die maximale Stromtragfähigkeit bei 90 °C Schienentemperatur bei 673,2 A liegt. Zur Validierung wird die selbstgebogene flexible Kupferschiene im Firmen eigenen Prüffeld getestet. Dabei wird die flexible Schiene sowie eine Referenzschiene an ein Prüfgerät angeschlossen und mit Thermoelementen ausgestattet. @Prüfaufbau[Abb.] zeigt den Test Gleichrichter (links), in der Mitte die zu testenden Kupferschienen und rechts den voreingestellten Prüfstrom.
+Im Diagramm ist zu erkennen, dass die maximale Stromtragfähigkeit bei 90 °C Schienentemperatur bei 673,2 A liegt. Zur Validierung wird die selbstgebogene flexible Kupferschiene im Firmen eigenen Prüffeld getestet. Dabei wird die flexible Schiene sowie eine Referenzschiene an ein Prüfgerät angeschlossen und mit Thermoelementen ausgestattet. @Prüfaufbau[Abb.] zeigt den Test Gleichrichter links, in der Mitte die zu testenden Kupferschienen und rechts den voreingestellten Prüfstrom.
 #figure(
   grid(
     columns: 3,
@@ -189,8 +187,8 @@ Die an diesem Tag gemessenen Werte dienten als Grundlage für die zweite angepas
 )<PrüfStrom>
 
 == Fazit der technischen Analyse <FazitTechnischeAnalyse>
-Die Untersuchungen zeigen, dass flexible Kupferschienen im Schaltschrankbau technisch geeignet und prozesssicher herstellbar sind. Die praktische Bearbeitung an der Rittal-Werkbank mit Schneiden, Abisolieren, Stanzen und Biegen gelingt reproduzierbar und mit guter Maßhaltigkeit, wodurch sich die Anpassungsfähigkeit an komplexe Einbausituationen erhöht und der Bearbeitungsaufwand reduziert (vgl. @MechanischeBearbeitungAnpassungsfähigkeit). Die Montage über standardisierte Schraubverbindungen ist robust und begünstigt kurze Montagezeiten, was die im wirtschaftlichen Teil getroffenen Annahmen stützt.
+Die Untersuchungen zeigen, dass flexible Kupferschienen im Schaltschrankbau technisch geeignet und prozesssicher herstellbar sind. Die praktische Bearbeitung an der Rittal-Werkbank mit Schneiden, Abisolieren, Stanzen und Biegen gelingt reproduzierbar und mit guter Maßhaltigkeit, wodurch sich die Anpassungsfähigkeit an komplexe Einbausituationen erhöht und der Bearbeitungsaufwand reduziert (siehe @MechanischeBearbeitungAnpassungsfähigkeit). Die Montage über standardisierte Schraubverbindungen ist robust und begünstigt kurze Montagezeiten, was die im wirtschaftlichen Teil getroffenen Annahmen stützt.
 
-Hinsichtlich der elektrischen Leitfähigkeit bestätigen die Berechnungen eine hohe Stromtragfähigkeit der untersuchten Geometrie; für die gewählten Randbedingungen wurde rechnerisch eine zulässige Dauerstromstärke bei 90 °C Schienentemperatur von rund 673 A ermittelt. Der Prüffeldversuch bei 400 A liefert Temperaturwerte, die in der Größenordnung der berechneten Erwartungen liegen und die Methodik grundsätzlich validieren (vgl. @LeitfähigkeitStromtragfähigkeit). Für eine vollständige Absicherung sind weiterführende Typ- und Nachweisprüfungen gemäß IEC 61439, UL 508A und ABB Design-Guide vorzusehen, insbesondere zur thermischen Erwärmung im Verbund, zur Kurzschlussfestigkeit und zum Berührungsschutz (vgl. @MechanischeBelastbarkeitKurzschlussfestigkeit, @LeitfähigkeitStromtragfähigkeit).
+Hinsichtlich der elektrischen Leitfähigkeit bestätigen die Berechnungen eine hohe Stromtragfähigkeit der untersuchten Geometrie, für die gewählten Randbedingungen wurde rechnerisch eine zulässige Dauerstromstärke bei 90 °C Schienentemperatur von rund 673 A ermittelt. Der Prüffeldversuch bei 400 A liefert Temperaturwerte, die in der Größenordnung der berechneten Erwartungen liegen und die Methodik grundsätzlich validieren (siehe @LeitfähigkeitStromtragfähigkeit). Für eine vollständige Absicherung sind weiterführende Typ- und Nachweisprüfungen gemäß IEC 61439, UL 508A und ABB Design-Guide vorzusehen, insbesondere zur thermischen Erwärmung im Verbund, zur Kurzschlussfestigkeit und zum Berührungsschutz (siehe @MechanischeBelastbarkeitKurzschlussfestigkeit, @LeitfähigkeitStromtragfähigkeit).
 
 Aus technischer Sicht bieten flexible Kupferschienen somit klare Vorteile bei Integrationsdichte, Anpassbarkeit und montagegerechter Auslegung, ohne gravierende Nachteile in Leit- und Wärmefähigkeit erkennen zu lassen, sofern Auslegung, Kontaktflächenbearbeitung und Befestigung normgerecht erfolgen. Offene Punkte betreffen die Skalierung der Ergebnisse auf höhere Ströme, die Verifikation der elektrodynamischen Festigkeit unter Kurzschluss sowie die Langzeitstabilität von Kontaktübergängen unter thermischer Zyklierung. Empfohlen werden daher der Abschluss der Typprüfungen (Erwärmung, Kurzschlussfestigkeit), die Definition verbindlicher Arbeitsanweisungen für Abisolieren/Stanzen/Biegen sowie ein erweitertes Messprogramm zur Ableitung freigegebener Stromgrenzen für unterschiedliche Querschnitte und Einbaulagen. Insgesamt bestätigt die technische Analyse die Eignung flexibler Kupferschienen für den Einsatz im Schaltschrankbau und liefert eine belastbare Grundlage für eine stufenweise Integration in den Schaltschrankbau.
