@@ -10,7 +10,7 @@
     )<emsangebot>
   == nVent-Preise
     #figure(
-        image("/chapters/Bachelor/Preise_Flexibars_HD.png", width: 100%, fit: "stretch"),
+        image("/chapters/Bachelor/Bild.png", width: 100%, fit: "stretch"),
         caption: [nVent-Preise: @weylandEigeneDarstellunga]
     )<nVentpreise>
 
