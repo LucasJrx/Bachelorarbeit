@@ -1,5 +1,5 @@
 #import "../lib/lib.typ": *
-
+#pagebreak()
 = Fallstudie/Beispielanwendung <FallstudieBeispielanwendung>
 Nach der in @Wirtschaftsanalyse durchgeführten wirtschaftlichen Bewertung wird im Folgenden eine Fallstudie vorgestellt, die die Umstellung eines konkreten Schaltschrankdesigns an einem H4-Modul von starren Kupferschienen auf flexible Kupferschienen exemplarisch nachvollzieht. Ziel ist es, die in @Wirtschaftsanalyse abgeleiteten Effekte an einem realitätsnahen Beispiel zu veranschaulichen und Implikationen für die Praxis abzuleiten.
 

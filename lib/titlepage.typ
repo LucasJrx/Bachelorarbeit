@@ -1,5 +1,5 @@
 #import "locale.typ": *
-
+ 
 #let titlepage(
   authors,
   date,
@@ -28,7 +28,7 @@
   } else {
     v(-1em)
   }
-
+ 
   // logos (optional)
   stack(dir: ltr,
     spacing: 1fr,
@@ -47,39 +47,39 @@
       }
     )
   )
-
+ 
   if (many-authors) {
-    v(4em)
+    v(3em)
   } else {
-    v(8em)
+    v(6em)
   }
-
+ 
   // title
   align(center, text(weight: "semibold", font: heading-font, 12pt, title))
-
+ 
   if (many-authors) {
-    v(0.5em)
+    v(1em)
   } else {
-    v(0.5em)
+    v(2em)
   }
-
+ 
   // confidentiality marker (optional)
   if (confidentiality-marker.display) {
     let size = 7em
     let display = false
     let title-spacing = 1em
     let x-offset = 0pt
-
+ 
     let y-offset = if (many-authors) {
       7pt
     } else {
       0pt
     }
-
-    if (type-of-degree == none and type-of-thesis == none) {
+ 
+    if (type-of-degree == none and type-of-thesis-bold == none) {
       title-spacing = 0em
     }
-
+ 
     if ("display" in confidentiality-marker) {
       display = confidentiality-marker.display
     }
@@ -95,15 +95,15 @@
     if ("title-spacing" in confidentiality-marker) {
       confidentiality-marker.title-spacing
     }
-
+ 
     v(title-spacing)
-
+ 
     let color = if (show-confidentiality-statement) {
       red
     } else {
       green.darken(5%)
     }
-
+ 
     place(
       right,
       dx: 35pt + x-offset,
@@ -111,22 +111,22 @@
       circle(radius: size / 2, fill: color),
     )
   }
-
+ 
   // type of thesis (optional)
   if (type-of-thesis != none and type-of-thesis.len() > 0) {
-    align(center, text(weight: "semibold", 1.25em, type-of-thesis))
-    v(0.5em)
+    align(center, text(weight: "semibold", 12pt, type-of-thesis))
+    v(1em)
   }
-
+ 
   // type of degree (optional)
   if (type-of-degree != none and type-of-degree.len() > 0) {
     align(center, text(1em, TITLEPAGE_SECTION_A.at(language)))
     v(-0.25em)
-    align(center, text(weight: "semibold", 1.25em, type-of-degree))
+    align(center, text(weight: "medium", 12pt, type-of-degree))
   }
-
+ 
   v(1.5em)
-
+ 
   // course of studies
   align(
     center,
@@ -135,13 +135,13 @@
       TITLEPAGE_SECTION_B.at(language) + authors.map(author => author.course-of-studies).dedup().join(" | "),
     ),
   )
-
+ 
   if (many-authors) {
     v(0.5em)
   } else {
     v(0.75em)
   }
-
+ 
   // university
   align(
     center,
@@ -150,21 +150,21 @@
       TITLEPAGE_SECTION_C.at(language) + university + [ ] + university-location,
     ),
   )
-
+ 
   if (many-authors) {
     v(0.8em)
   } else {
     v(3em)
   }
-
+ 
   align(center, text(12pt, BY.at(language)))
-
+ 
   if (many-authors) {
     v(0.8em)
   } else {
     v(1em)
   }
-
+ 
   // authors
   grid(
     columns: 100%,
@@ -176,36 +176,44 @@
     ..authors.map(author => align(
       center,
       {
-        text(weight: "semibold", 12pt, author.name)
+        text(weight: "medium", 12pt, author.name)
       },
     ))
   )
-
+ 
   if (many-authors) {
     v(0.8em)
   } else {
     v(2em)
   }
-
+ 
   // date
   align(
     center,
     text(
       12pt,
-      "23.06.2025",
+      if (type(date) == datetime) {
+        date.display(date-format)
+      } else {
+        date.at(0).display(date-format) + [ -- ] + date.at(1).display(date-format)
+      },
     ),
   )
-
-  v(5em)
-
+ 
+   if (many-authors) {
+    v(1em)
+  } else {
+    v(7em)
+  }
+ 
   // author information
   grid(
     columns: (auto, auto),
     row-gutter: 12pt,
     column-gutter: 3em,
-
+ 
     //processing period
-    text(weight: "semibold", TITLEPAGE_PROCESSING_PERIOD.at(language)),
+    text(weight: "medium", TITLEPAGE_PROCESSING_PERIOD.at(language)),
     stack(
       dir: ttb,
       for author in authors {
@@ -213,9 +221,9 @@
         linebreak()
       }
     ),
-
+ 
     // students
-    text(weight: "semibold", TITLEPAGE_STUDENT_ID.at(language)),
+    text(weight: "medium", TITLEPAGE_STUDENT_ID.at(language)),
     stack(
       dir: ttb,
       for author in authors {
@@ -223,17 +231,17 @@
         linebreak()
       }
     ),
-
+ 
     // company
     if (not at-university) {
-      text(weight: "semibold", TITLEPAGE_COMPANY.at(language))
+      text(weight: "medium", TITLEPAGE_COMPANY.at(language))
     },
     if (not at-university) {
       stack(
         dir: ttb,
         for author in authors {
           let company-address = ""
-
+ 
           // company name
           if (
             "name" in author.company and
@@ -244,7 +252,7 @@
           } else {
             panic("Author '" + author.name + "' is missing a company name. Add the 'name' attribute to the company object.")
           }
-
+ 
           // company address (optional)
           if (
             "post-code" in author.company and
@@ -253,7 +261,7 @@
             ) {
             company-address+= text([, #author.company.post-code])
           }
-
+ 
           // company city
           if (
             "city" in author.company and
@@ -264,7 +272,7 @@
           } else {
             panic("Author '" + author.name + "' is missing the city of the company. Add the 'city' attribute to the company object.")
           }
-
+ 
           // company country (optional)
           if (
             "country" in author.company and
@@ -273,25 +281,25 @@
           ) {
             company-address+= text([, #author.company.country])
           }
-
+ 
           company-address
           linebreak()
         }
       )
     },
-
+ 
     // company supervisor
     if ("company" in supervisor) {
-      text(weight: "semibold", TITLEPAGE_COMPANY_SUPERVISOR.at(language))
+      text(weight: "medium", TITLEPAGE_COMPANY_SUPERVISOR.at(language))
     },
     if ("company" in supervisor and type(supervisor.company) == str) {
       text(supervisor.company)
     },
-
+ 
     // university supervisor
     if ("university" in supervisor) {
       text(
-        weight: "semibold",
+        weight: "medium",
         TITLEPAGE_SUPERVISOR.at(language) +
         university-short +
         [:]
@@ -301,13 +309,4 @@
       text(supervisor.university)
     }
   )
-  v(6em)
-  line(
-  length: 7cm,
-  stroke: 1pt,
-)
-  text(weight: "medium",
-  "Unterschrift Betreuer*in", 12pt)
-
-  pagebreak()
 }

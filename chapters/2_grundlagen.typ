@@ -1,5 +1,5 @@
 #import "../lib/lib.typ": *
-
+#pagebreak()
 = Grundlagen <Grundlagen> 
 Die vorliegende Arbeit wird in der #acrs("ABB") AG am Standort Mannheim, innerhalb der Business Unit High Power in der Abteilung System Drives geschrieben. Die Abteilung ist spezialisiert auf die Entwicklung, Konstruktion und Fertigung von konfigurierten sowie kundenspezifisch ausgelegten Schaltschränken, in denen ausschließlich ABB-Module wie der DCS880 und DCT880 integriert werden. Bei diesen Modulen handelt es sich um leistungsfähige Gleichrichter, die mittels Thyristortechnologie Gleichstrom erzeugen.
 

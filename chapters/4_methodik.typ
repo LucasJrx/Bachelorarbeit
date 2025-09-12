@@ -1,5 +1,5 @@
 #import "../lib/lib.typ": *
-
+#pagebreak()
 = Methodik <Methodik>
 Dieses Kapitel beschreibt die methodische Vorgehensweise zur Entscheidungsfindung im Rahmen der vorliegenden Arbeit. Im Zentrum steht eine Business Case Analyse, welche die wirtschaftliche Bewertung der Umstellung von starren auf flexible Kupferschienen im Schaltschrankbau bei der ABB AG ermöglicht @taschnerBusinessCases2017[Kap.1-2; 6-8]. Ergänzend wird eine Risikoanalyse durchgeführt, um potenzielle Unsicherheiten und Einflussfaktoren zu bewerten @taschnerBusinessCases2017[Kap.11]. Abschließend erfolgt eine technische Analyse zur Beurteilung der praktischen Umsetzbarkeit der bevorzugten Option.
 == Vorgehensweise zur Analyse<VorgehensweiseAnalyse>

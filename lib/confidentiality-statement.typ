@@ -10,6 +10,7 @@
   language,
   many-authors,
   date-format,
+  supervisor,
 ) = {
   let authors-by-city = authors.map(author => author.company.city).dedup()
   v(0em)
@@ -68,7 +69,7 @@
     for author in authors {
       v(4em)
       line(length: 40%)
-      author.name
+      supervisor.company
     }
   }
 }

@@ -1,5 +1,5 @@
 #import "../lib/lib.typ": *
-
+#pagebreak()
 = Stand der Technik <StandDerTechnik> 
 == Aktuelle Verbindungstechniken im Schaltschrankbau <VerbindungstechnikenSchaltschrankbau>
 In den derzeit bei ABB im DC-Schaltschrankbau eingesetzten Systemen werden ausschließlich Kabel und starre Kupferschienen verwendet. Letztere werden zur Montage und zur Erreichung der geforderten Anschlussgeometrien häufig in mehrere Segmente unterteilt. Hauptgründe für den verbreiteten Einsatz sind die hohe Verfügbarkeit, die einfache mechanische Bearbeitung sowie die im Vergleich zu Alternativen geringen Material- und Fertigungskosten.

@@ -1,5 +1,5 @@
 #import "../lib/lib.typ": *
-
+#pagebreak()
 = Wirtschaftsanalyse <Wirtschaftsanalyse>
 Im Rahmen dieser Arbeit erfolgt die wirtschaftliche Bewertung des Einsatzes flexibler Kupferschienen im Schaltschrankbau auf Basis einer strukturierten Business Case Analyse. Diese dient als methodisches Instrument zur systematischen Bewertung von Investitionsalternativen und erlaubt eine objektivierte Entscheidungsfindung unter Berücksichtigung von Kosten, Nutzen, Risiken und qualitativen Zusatzaspekten  @taschnerBusinessCases2017[Kap.3; 10-12].
 

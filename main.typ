@@ -11,7 +11,7 @@
   title: "Untersuchung der technischen und wirtschaftlichen Einsatzmöglichkeiten und Potenziale flexibler Kupferschienen im Schaltschrankbau.
 ",
   authors: (
-    (name: "Lucas Weyland", student-id: "3306752", course: "TEL22AT1", course-of-studies: "Elektrotechnik", company:  (
+    (name: "Lucas Weyland", student-id: "3306752", course: "TEL22AT1", course-of-studies: "Elektrotechnik - Automatisierungstechnik", company:  (
       (name: "ABB AG", post-code: "", city: "Mannheim", street: "Kallstadterstr. 1", country: "")
     )),
   ),
@@ -19,10 +19,13 @@
   at-university: false, // if true the company name on the title page and the confidentiality statement are hidden
   confidentiality-marker: (display: false),
   bibliography: bibliography("Bachelorarbeit.bib"),
-  date: datetime(day: 23, month: 6, year: 2025), // the date is displayed on the title page
+  date: datetime(day: 15, month: 9, year: 2025), // the date is displayed on the title page
   language: "de", // en, de
+  type-of-degree: "Bachelor of Engineering",
+  type-of-thesis-bold: "BACHELORARBEIT",
+  type-of-thesis: "BACHELORARBEIT",
   supervisor: (company: "Albert Lewandowski", university: "Margit Rechkemmer"),
-  university: "Duale Hochschule Baden-Württemberg",
+  university: "Dualen Hochschule Baden-Württemberg",
   university-location: "Mannheim",
   university-short: "DHBW",
   processing_period: "23.06.2025 bis 15.09.2025", // the processing period is displayed on the title page

@@ -45,6 +45,7 @@
   confidentiality-marker: (display: false),
   type-of-thesis: none,
   type-of-degree: none,
+  type-of-thesis-bold: none,
   show-confidentiality-statement: true,
   show-declaration-of-authorship: true,
   show-table-of-contents: true,
@@ -341,6 +342,7 @@
       language,
       many-authors,
       date-format,
+      supervisor,
     )
   }
 

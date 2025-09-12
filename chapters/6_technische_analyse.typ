@@ -1,5 +1,5 @@
 #import "../lib/lib.typ": *
-
+#pagebreak()
 = Technische Analyse <TechnischeAnalyse>
 Nachdem in @Wirtschaftsanalyse die wirtschaftlichen Aspekte der Nutzung flexibler Kupferschienen im Schaltschrankbau untersucht wurden und in @FallstudieBeispielanwendung die praktische Anwendung demonstriert wurde, folgt nun eine detaillierte technische Analyse der konstruierten Schienen. Ziel ist es, die relevanten technischen Eigenschaften und Anforderungen flexibler Kupferschienen zu beleuchten und diese mit herkömmlichen starren Kupferschienen zu vergleichen. Hierzu werden die Stromtragfähigkeit, das thermische Verhalten, die mechanische Belastbarkeit, der Montageaufwand sowie der Platzbedarf und die Flexibilität betrachtet. Die Analyse stützt sich auf Normen, technische Richtlinien und interne Design-Guides, um eine fundierte Bewertung der technischen Eignung flexibler Kupferschienen im Kontext des Schaltschrankbaus zu ermöglichen.
 

@@ -1,5 +1,5 @@
 #let TITLEPAGE_SECTION_A = (
-  "de": "für den Erwerb des",
+  "de": "für die Prüfung zum",
   "en": "for the",
 )
 
