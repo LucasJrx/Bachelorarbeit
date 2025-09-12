@@ -15,4 +15,5 @@
   "GaN": "Galliumnitrid",
   "SOP": "Standard Operating Procedure",
   "KPI": "Key Performance Indicator",
+  "DoE": "Design of Experiments",
 )
