@@ -1,7 +1,7 @@
 #import "../lib/lib.typ": *
 #pagebreak()
 = Grundlagen <Grundlagen> 
-Die vorliegende Arbeit wird in der #acrs("ABB") AG am Standort Mannheim, innerhalb der Business Unit High Power in der Abteilung System Drives geschrieben. Die Abteilung ist spezialisiert auf die Entwicklung, Konstruktion und Fertigung von konfigurierten sowie kundenspezifisch ausgelegten Schaltschränken, in denen ausschließlich ABB-Module wie der DCS880 und DCT880 integriert werden. Bei diesen Modulen handelt es sich um leistungsfähige Gleichrichter, die mittels Thyristortechnologie Gleichstrom erzeugen.
+Dieses Kapitel bündelt die Grundlagen für den DC-Schaltschrankbau. Es beschreibt die Systemarchitektur mit zentralen Baugruppen und Schnittstellen, erläutert Aufgaben und Dimensionierungsprinzipien von Kupferschienen und skizziert materialbezogene Kenngrößen wie Stromtragfähigkeit und zulässige Erwärmung. Ein kurzer Vergleich zwischen starren und flexiblen Ausführungen zeigt typische Einsatzbereiche und Grenzen. Abschließend werden die relevanten Normen und Randbedingungen umrissen, die den späteren Analysen und der Fallstudie zugrunde liegen.
 
 == Einführung in den Schaltschrankbau <EinführungSchaltschrankbau>
 

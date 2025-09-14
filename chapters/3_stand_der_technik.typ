@@ -1,6 +1,7 @@
 #import "../lib/lib.typ": *
 #pagebreak()
 = Stand der Technik <StandDerTechnik> 
+In diesem Kapitel wird der aktuelle Stand der Technik und Forschung im Bereich Kupferschienen im Schaltschrankbau dargestellt. Zunächst werden die derzeit im Schaltschrankbau eingesetzten Verbindungstechniken beschrieben. Anschließend werden die Einsatzbereiche und Vorteile flexibler Kupferschienen erläutert. Daraufhin folgt eine Übersicht über bisherige Forschungsarbeiten und industrielle Anwendungen, mit Fokus auf thermische und mechanische Auslegung, Induktivität und #acr("EMV")-Aspekte sowie Kontaktierung und Übergangswiderstände. Abschließend werden aktuelle Trends und zukünftige Forschungsperspektiven aufgezeigt.
 == Aktuelle Verbindungstechniken im Schaltschrankbau <VerbindungstechnikenSchaltschrankbau>
 In den derzeit bei ABB im DC-Schaltschrankbau eingesetzten Systemen werden ausschließlich Kabel und starre Kupferschienen verwendet. Letztere werden zur Montage und zur Erreichung der geforderten Anschlussgeometrien häufig in mehrere Segmente unterteilt. Hauptgründe für den verbreiteten Einsatz sind die hohe Verfügbarkeit, die einfache mechanische Bearbeitung sowie die im Vergleich zu Alternativen geringen Material- und Fertigungskosten.
 
