@@ -148,7 +148,7 @@ Mit den in @wertesttomtragfähigkeit genannten Werten ergibt sich folgendes Diag
   caption: [Errechnete Stromtragfähigkeit bei 90 °C Schienentemperatur @weylandEigeneDarstellunga],
 )<MaximalerStrom>
 
-Im Diagramm ist zu erkennen, dass die maximale Stromtragfähigkeit bei 90 °C Schienentemperatur bei 673,2 A liegt. Zur Validierung wird die selbstgebogene flexible Kupferschiene im Firmen eigenen Prüffeld getestet. Dabei wird die flexible Schiene sowie eine Referenzschiene an ein Prüfgerät angeschlossen und mit Thermoelementen ausgestattet. @Prüfaufbau[Abb.] zeigt den Test Gleichrichter links, in der Mitte die zu testenden Kupferschienen und rechts den voreingestellten Prüfstrom.
+Im Diagramm ist zu erkennen, dass die maximale Stromtragfähigkeit bei 90 °C Schienentemperatur bei 673,2 A liegt. Zur Validierung wird die selbstgebogene flexible Kupferschiene im firmeneigenen Prüffeld getestet. Dabei wird die flexible Schiene sowie eine Referenzschiene an ein Prüfgerät angeschlossen und mit Thermoelementen ausgestattet. @Prüfaufbau[Abb.] zeigt den Test Gleichrichter links, in der Mitte die zu testenden Kupferschienen und rechts den voreingestellten Prüfstrom.
 #figure(
   grid(
     columns: 3,
@@ -179,7 +179,7 @@ Die Thermoelemente wurden an ein Messgerät angeschlossen (@Thermoelemente[Abb.]
   caption: [Temperaturverlauf im Test @weylandEigeneDarstellunga],
 )<Temperaturverlauf>
 
-Die an diesem Tag gemessenen Werte dienten als Grundlage für die zweite angepasste Berechnung der theoretischen Stromtragfähigkeit. Die Umgebungstemperatur lag zum Zeitpunkt der Messung bei ca. 27 °C, die flexible Kupferschiene hatte unter der Isolation eine Temperatur von ca. 47 °C. Zum Vergleich, die Referenzschiene erreichte 44 °C. Die Ergebnisse des Tests werden mit den neu berechneten Werten verglichen, um die Geleichung zu überprüfen. Das Diagramm zeigt, dass die flexible Kupferschiene bei einer Stromstärke von 400 A eine Schienentemperatur von ca. 47 °C erreicht, was nahe am berechneten Wert für die Randbedingungen des Prüftags von 444,5 A liegt (@PrüfStrom[Abb.]), die Stromdifferenz lässt sich auf nicht berücksichtigte Umwelteinflüsse zurückführen. Dies bestätigt die grundsätzliche Eignung der Berechnungsmethodik und der flexiblen Kupferschiene für den Einsatz im Schaltschrankbau unter den gegebenen Betriebsbedingungen.
+Die an diesem Tag gemessenen Werte dienten als Grundlage für die zweite angepasste Berechnung der theoretischen Stromtragfähigkeit. Die Umgebungstemperatur lag zum Zeitpunkt der Messung bei ca. 27 °C, die flexible Kupferschiene hatte unter der Isolation eine Temperatur von ca. 47 °C. Zum Vergleich, die Referenzschiene erreichte 44 °C. Die Ergebnisse des Tests werden mit den neu berechneten Werten verglichen, um die Gleichung zu überprüfen. Das Diagramm zeigt, dass die flexible Kupferschiene bei einer Stromstärke von 400 A eine Schienentemperatur von ca. 47 °C erreicht, was nahe am berechneten Wert für die Randbedingungen des Prüftags von 444,5 A liegt (@PrüfStrom[Abb.]), die Stromdifferenz lässt sich auf nicht berücksichtigte Umwelteinflüsse zurückführen. Dies bestätigt die grundsätzliche Eignung der Berechnungsmethodik und der flexiblen Kupferschiene für den Einsatz im Schaltschrankbau unter den gegebenen Betriebsbedingungen.
 
 #figure(
   image("/chapters/Bachelor/Stromtragfähigkeit.png", width: 100%, fit: "stretch"),

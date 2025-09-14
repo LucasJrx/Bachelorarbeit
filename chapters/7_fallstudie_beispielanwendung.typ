@@ -45,7 +45,7 @@ Im Anschluss wurde in Inventor 2019 das 3D-Modell des H4-Moduls analysiert und w
     image("/chapters/Bachelor/H4Alt.png", width: 82%, fit: "stretch"),
     image("/chapters/Bachelor/H4Neu.png", width: 60%, fit: "stretch"),
   ),
-  caption: [Anschlussschiene Alt (links) vs. Anschlusschiene Neu (rechts) @weylandEigeneDarstellunga],
+  caption: [Anschlussschiene Alt (links) vs. Anschlussschiene Neu (rechts) @weylandEigeneDarstellunga],
 )<H4AltNeu>
 
 Die Verbindungsschiene zum Trafo wurde nicht verändert wie in @H4trafo zu sehen ist, da diese Konstruktion genau so beibehalten werden kann. Diese Konstruierten Schienen sollen anschließend in @TechnischeAnalyse gefertigt werden und ausgibig getestet werden.
