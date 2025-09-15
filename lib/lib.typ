@@ -276,8 +276,8 @@
             } else {
               none
             },
-            // Mittig: T3300 fett
-            align(center, text(weight: 600, size: 12pt, "T3300")),           
+            // Mittig: BACHELORARBEIT fett
+            align(center, text(weight: 600, size: 12pt, "BACHELORARBEIT")),
             // Rechtes Logo
             if (show-header-right-logo and logo-right != none) {
               set image(height: right-logo-height / 3)
