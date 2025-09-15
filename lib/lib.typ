@@ -46,7 +46,7 @@
   type-of-thesis: none,
   type-of-degree: none,
   type-of-thesis-bold: none,
-  show-confidentiality-statement: true,
+  show-confidentiality-statement: false,
   show-declaration-of-authorship: true,
   show-table-of-contents: true,
   show-acronyms: true,
@@ -328,7 +328,7 @@
       )
     },
   )
-  counter(page).update(0)
+  counter(page).update(1)
 
   if (not at-university and show-confidentiality-statement) {
     //pagebreak()
