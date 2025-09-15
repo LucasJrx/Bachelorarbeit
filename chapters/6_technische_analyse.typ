@@ -68,7 +68,7 @@ $ F = 8,308 * -10^4 * (K * I_"pk"^2) / a  = 45,43"kN"/m $
    [],[*Formelzeichen*], [*Wert*],
   ),
   [Schienen-Formfaktor],[$K$],[$1,1$],
-  [Abstand mittig der Schienen],[$a$],[0,085m],
+  [Abstand mittig der Schienen],[$a$],[0,085 m],
   [Kurzschlussstroms],[$I_"pk"$],[$65 "kA"$],
   )   
 )<wertesKurzschlusskraft> 
@@ -105,7 +105,7 @@ Die Kontaktierung flexibler Kupferschienen erfolgt in der Regel über Schraubver
 Die Montage der flexiblen Kupferschienen wurde in einem Test-Schaltschrank durchgeführt. Dabei wurde die flexible Kupferschiene in den Schaltschrank eingelegt und mit den vorhandenen Befestigungspunkten verschraubt. Die Montagezeit reduzierte sich, da die Geometrie der flexiblen Kupferschiene vorteilhafter ist als die der starren Kupferschiene. Zudem werden weniger Anschraubpunkte benötigt, da die flexible Kupferschiene in einem Stück gefertigt wurde; ein Abfangen der Schiene ist nicht mehr erforderlich. Diese Erkenntnis stützt die in @Wirtschaftsanalyse getroffene Annahme, dass der Montageaufwand durch den Einsatz flexibler Kupferschienen signifikant reduziert werden kann.
 
 == Leitfähigkeit und Stromtragfähigkeit <LeitfähigkeitStromtragfähigkeit>
-Die elektrische Leitfähigkeit von Kupfer ist ein entscheidender Faktor für die Stromtragfähigkeit von Kupferschienen. Da ABB und nVent beide Cu-ETP  @DatenblaetterKupferverband, @NVentERIFLEXFlexible[S. 10] für die Schienen verwenden, weisen diese eine sehr hohe Leitfähigkeit auf. Um die Stromtragfähigkeit der in @FallstudieBeispielanwendung konstruierten flexiblen Kupferschiene zu bewerten, wird sie zunächst theoretisch hergeleitet @CopperBusbarsGuidance @IEC614391[Kap.10.10] und anschließend durch einen Test im Prüffeld Praktisch überprüft. Die Stromtragfähigkeit wird durch Normen wie IEC 61439-1 @IEC614391[Kap.10.10], UL 508A @UL508[SB3.2] sowie internen ABB-Richtlinien  @deffaaDesignHandbuchDCcabinets2024 definiert, die spezifische Anforderungen an die Dimensionierung und Auslegung von Sammelschienen stellen. Flexible Kupferschienen müssen so ausgelegt sein, dass sie die geforderten Ströme sicher führen können, ohne dass es zu einer Überschreitung des zulässigen Schienentemperatur von im Design-Guide festgelegten 90 °C kommt oder übermäßig mechanisch belastet werden. Im ersten Schritt wird die Stromtragfähigkeit der zu prüfenden flexiblen Kupferschiene mit einem Querschnitt von 200 mm² und einer Länge von 296 mm bei einer Umgebungstemperatur von 40 °C und einer zulässigen Schienentemperatur von 90 °C berechnet. Diese Werte entsprechen typischen Betriebsbedingungen, die laut Design-Guide zulässig sind. Dabei werden sowohl die Konvektion als auch die Strahlung als Wärmeabfuhrmechanismen berücksichtigt. Die Berechnung erfolgt über ein selbst geschriebenes Python-Skript, das den errechneten Temperaturverlauf mit matplotlib visualisiert und den Strom bei 90 °C Schienentemperatur anzeigt, der maximal erreicht werden kann. Die Berechnung basiert auf folgenden Gleichungen mit den folgenden Werten 
+Die elektrische Leitfähigkeit von Kupfer ist ein entscheidender Faktor für die Stromtragfähigkeit von Kupferschienen. Da ABB und nVent beide Cu-ETP  @DatenblaetterKupferverband, @NVentERIFLEXFlexible[S. 10] für die Schienen verwenden, weisen diese eine sehr hohe Leitfähigkeit auf. Um die Stromtragfähigkeit der in @FallstudieBeispielanwendung konstruierten flexiblen Kupferschiene zu bewerten, wird sie zunächst theoretisch hergeleitet @CopperBusbarsGuidance @IEC614391[Kap.10.10] und anschließend durch einen Test im Prüffeld praktisch überprüft. Die Stromtragfähigkeit wird durch Normen wie IEC 61439-1 @IEC614391[Kap.10.10], UL 508A @UL508[SB3.2] sowie internen ABB-Richtlinien  @deffaaDesignHandbuchDCcabinets2024 definiert, die spezifische Anforderungen an die Dimensionierung und Auslegung von Sammelschienen stellen. Flexible Kupferschienen müssen so ausgelegt sein, dass sie die geforderten Ströme sicher führen können, ohne dass es zu einer Überschreitung des zulässigen Schienentemperatur von im Design-Guide festgelegten 90 °C kommt oder übermäßig mechanisch belastet werden. Im ersten Schritt wird die Stromtragfähigkeit der zu prüfenden flexiblen Kupferschiene mit einem Querschnitt von 200 mm² und einer Länge von 296 mm bei einer Umgebungstemperatur von 40 °C und einer zulässigen Schienentemperatur von 90 °C berechnet. Diese Werte entsprechen typischen Betriebsbedingungen, die laut Design-Guide zulässig sind. Dabei werden sowohl die Konvektion als auch die Strahlung als Wärmeabfuhrmechanismen berücksichtigt. Die Berechnung erfolgt über ein selbst geschriebenes Python-Skript, das den errechneten Temperaturverlauf mit matplotlib visualisiert und den Strom bei 90 °C Schienentemperatur anzeigt, der maximal erreicht werden kann. Die Berechnung basiert auf folgenden Gleichungen mit den folgenden Werten 
 
 $ "Joule'sches Gesetz der Verlustleistung:" P_"Cu" = I^2 * R(T_c) $<Formel6> 
 $ R(T_c) = rho_"Cu" * (1 + alpha_"Cu" * (T_c - T_a)) * (l / (b * d))\ $<Formel7> 
@@ -133,9 +133,9 @@ $ I = sqrt((h * A_O * (T_c - T_a) + epsilon * sigma * A_O * [(T_c + 273,15)^4 - 
   [Endtemperatur],[$T_c$],[90 °C],
   [Spezifischer Widerstand von Kupfer],[$rho_"Cu"$],[$1,72 * 10^-8 Omega/m$],
   [Temperaturkoeffizient von Kupfer],[$alpha_"Cu"$],[$0,00393 1/K$],
-  [Schienen Länge],[$l$],[$0,296 m$],
-  [Schienen Breite],[$b$],[$0,02 m$],
-  [Schienen Dicke],[$d$],[$0,005 m$],
+  [Schienenlänge],[$l$],[$0,296 m$],
+  [Schienenbreite],[$b$],[$0,02 m$],
+  [Schienendicke],[$d$],[$0,005 m$],
   )   
 )<wertesttomtragfähigkeit> 
 

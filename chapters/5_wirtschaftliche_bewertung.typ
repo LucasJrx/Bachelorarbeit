@@ -52,10 +52,10 @@ Diese Handlungsoptionen bilden die Grundlage für die nachfolgenden Analysen, in
 Es werden alle technischen, organisatorischen und wirtschaftlichen Voraussetzungen definiert, unter denen die Analyse durchgeführt wird. Dazu gehören z.B. der Analysezeitraum, die Produktionsmengen, der Kalkulationszinssatz sowie relevante Normen und Budgetvorgaben.
 #figure(
   image("/chapters/Bachelor/Mind map.svg", fit: "stretch"),
-  caption: [Mind Map Wirtschaftlichkeitsanalyse @weylandEigeneDarstellunga],
+  caption: [Mindmap Wirtschaftlichkeitsanalyse @weylandEigeneDarstellunga],
 )<MindMap>
 
-Im nächsten Schritt wird der Umfang der Analyse definiert. Betrachtet werden typische Problemstellen, die durch Beobachtungen in der Fertigung identifiziert wurden und an denen eine vertiefte Analyse den größten Mehrwert erwarten lässt. Solche Problemstellen wurden besonders in Schaltschränken mit den Modulgrößen H4 und H6 im Standardsegment des Produktportfolios beobachtet, ebenso in Sonderkonstruktionen, bei denen beispielsweise zwei 2m lange Kabel mit einem Querschnitt von 120 mm² zur Anbindung an einen speziellen DC-Kundenanschluss eingesetzt werden. Gerade an solchen Stellen besteht eine große Vielfalt unterschiedlicher starrer und gelaseter Kupferschienen sowie Kabelverbindungen.
+Im nächsten Schritt wird der Umfang der Analyse definiert. Betrachtet werden typische Problemstellen, die durch Beobachtungen in der Fertigung identifiziert wurden und an denen eine vertiefte Analyse den größten Mehrwert erwarten lässt. Solche Problemstellen wurden besonders in Schaltschränken mit den Modulgrößen H4 und H6 im Standardsegment des Produktportfolios beobachtet, ebenso in Sonderkonstruktionen, bei denen beispielsweise zwei 2 m lange Kabel mit einem Querschnitt von 120 mm² zur Anbindung an einen speziellen DC-Kundenanschluss eingesetzt werden. Gerade an solchen Stellen besteht eine große Vielfalt unterschiedlicher starrer und gelaseter Kupferschienen sowie Kabelverbindungen.
 
 Die Fokussierung auf diese Modulgrößen ermöglicht es, im Nachgang übertragbare Ableitungen für weitere Modulgrößen zu treffen. Der Betrachtungszeitraum erstreckt sich über fünf Jahre.
 
@@ -96,17 +96,17 @@ Die Materialkosten betragen:
    [], [*H4-Schienen*], [*H6-Schienen*], [*Kabelverbindungen*],
   ),
   [ABB (@abbpreise)],
-  [60,25€/kg],
-  [19,54€/kg],
-  [15,19€/m \
-  8,00€ für Kabelschuhe],
+  [60,25 €/kg],
+  [19,54 €/kg],
+  [15,19 €/m \
+  8,00 € für Kabelschuhe],
   [nVent (@nVentpreise)],
-  [27,71€/kg],
-  [27,71€/kg],
-  [16,34€/m],
+  [27,71 €/kg],
+  [27,71 €/kg],
+  [16,34 €/m],
   [EMS (@emsangebot)],
-  [25,26€/kg],
-  [25,26€/kg],
+  [25,26 €/kg],
+  [25,26 €/kg],
   [ kein Angebot]
   )   
 )<Materialkosten>
@@ -120,15 +120,15 @@ Für die Bearbeitung starrer Kupferschienen ist bereits eine Maschine mit Biege-
   inset: 10pt,
   align: horizon,
   table.header(
-   [Faltstation 1.500€ @MFFNVentERIFLEX], [Abisolierstation 200€ @MFST2NVentERIFLEX], [Schulungen 350€ \ pro Person],
+   [Faltstation 1500 € @MFFNVentERIFLEX], [Abisolierstation 200 € @MFST2NVentERIFLEX], [Schulungen 350 € \ pro Person],
   ),
 
   )
 )<Investitionskosten>
 
 Die Personalkosten setzen sich wie folgt zusammen:
-Engineering-Personal: 90€ pro Stunde
-Fertigungspersonal (Montage): 120€ pro Stunde
+Engineering-Personal: 90 € pro Stunde
+Fertigungspersonal (Montage): 120 € pro Stunde
 
 Die durchschnittlichen Montagezeiten betragen:
 Starre Kupferschienen (H4 und H6) 3-4 Stunden pro Modul
@@ -161,46 +161,46 @@ Im Folgenden werden die in @Problemstellen sowie @Kabelproblem identifizierten S
   [Busbar H3/4 U\
   Busbar H3/4 V\
   Busbar H3/4 W],
-  [79,68€\
-  101,35€\
-  131,56€],
+  [79,68 €\
+  101,35 €\
+  131,56 €],
   [1,3 kg\
   1,7 kg\
   2,2 kg],
-  [61,29€/kg\
-  59,62€/kg\
-  59,80€/kg],
-  [313,23€],
+  [61,29 €/kg\
+  59,62 €/kg\
+  59,80 €/kg],
+  [313,23 €],
   [Busbar H6 U\
   Busbar H6 V\
   Busbar H6 W\
   Verbinder H6 ],
-  [79,68€\
-  101,35€\
-  131,56€\
-  36,44€],
+  [79,68 €\
+  101,35 €\
+  131,56 €\
+  36,44 €],
   [6,7 kg\
   7,2 kg\
   7 kg\
   1,4 kg],
-  [17,43€/kg\
-  17,28€/kg\
-  17,42€/kg\
-  26,03€/kg],
-  [572,49€],
+  [17,43 €/kg\
+  17,28 €/kg\
+  17,42 €/kg\
+  26,03 €/kg],
+  [572,49 €],
   [Kabel\
   Kabelschuhe\
   ],
-  [15,19€\
-  4€\
+  [15,19 €\
+  4 €\
  ],
   [4,28 kg\
   0,35 kg\
   ],
-  [14,13€/kg\
+  [14,13 €/kg\
   -\
   ],
-  [66,13€],
+  [66,13 €],
   )   
 )<Schienenvergleich>
 Auf Basis der ermittelten Gesamtpreise der jeweiligen Schienenpakete (siehe @Schienenvergleich) erfolgt im nächsten Schritt der Vergleich mit den Angebotsdaten der Anbieter nVent und EMS. Hierzu werden die Gesamtpreise der bestehenden Lösungen den kalkulierten Kosten der flexiblen Alternativen gegenübergestellt, um das Einsparungspotenzial systematisch zu quantifizieren.
@@ -215,17 +215,17 @@ Auf Basis der ermittelten Gesamtpreise der jeweiligen Schienenpakete (siehe @Sch
    [], [*ABB*], [*nVent*], [*EMS*],
   ),
   [Kilopreise],
-  [60,24€/kg],
-  [27,71€/kg],
-  [26,26€/kg],
+  [60,24 €/kg],
+  [27,71 €/kg],
+  [26,26 €/kg],
   [H4-Schienen],
-  [313,23€],
-  [144,07€],
-  [136,55€],
+  [313,23 €],
+  [144,07 €],
+  [136,55 €],
   [H6-Schienen],
-  [572,49€],
-  [695,40€],
-  [584,23€],
+  [572,49 €],
+  [695,40 €],
+  [584,23 €],
  
 
   )   
@@ -277,20 +277,20 @@ $ "Gewinn" = "Erlöse" - "Gesamtkosten"\
    [], [*nVent*], [*EMS*],
   ),
   [*Abschreibungen*],
-  [550€],
-  [550€],
+  [550 €],
+  [550 €],
   [*Kalkulatorische Zinsen*],
-  [68,75€],
-  [68,75€],
+  [68,75 €],
+  [68,75 €],
   [*Gesamtkosten*],
-  [618,75€],
-  [618,75€],
+  [618,75 €],
+  [618,75 €],
   [*Erlöse*],
-  [4.229€],
-  [4.417€],
+  [4229 €],
+  [4417 €],
   [*Gewinn*],
-  [3.610,255€],
-  [3.798,25€]
+  [3610,255 €],
+  [3798,25 €]
   )   
 )<Gesamtkosten>
 
@@ -312,14 +312,14 @@ Hier lassen sich aus @Gesamtkosten die Daten zum errechnen der Rentabilität ent
    [], [*nVent*], [*EMS*],
   ),
   [*Gewinn*],
-  [3610,25€],
-  [3.798,25€],
+  [3610,25 €],
+  [3798,25 €],
   [*kalkulatorische Zinsen*],
-  [68,75€],
-  [68,75€],
+  [68,75 €],
+  [68,75 €],
   [*gebundenes Kapital*],
-  [1375€],
-  [1375€],
+  [1375 €],
+  [1375 €],
   [*Rentabilität*],
   [267,5 %],
   [281,24 %]
@@ -335,13 +335,14 @@ Mithilfe der Kapitalwertmethode oder auch Nettobarwert, NBW, Net Present Value o
 $ -Z_0 + sum_(t=1)^T Z_t / (1 + r)^t = "NBW" >= 0 \
 Z_0 = "Anfangsinvestition", T = "Betrachtungszeitraum"\ 
 Z_t = "Zahlungsstrom", r = "Kalkulationszinssatz", t = "Periode" \
-"daraus folgt" 3.438,33€ + 3.274,60€ + 3.118,66€ + 2.970,156€ + 2.828,72€ = 15.630,357€ \ 
-"NBW nVent" = 15.630,357€ - 2.750€ = 12.880,357€\
-"NBW EMS" = 16.444,43€ - 2.750€ = 13.694,43€ $
+"daraus folgt" 3438,33 € + 3274,60 € + 3118,66 € + 2970,156 € + 2828,72 € = 15630,357 € \ 
+"NBW nVent" = 15630,357 € - 2750 € = 12880,357 €\
+"NBW EMS" = 16444,43 € - 2750 € = 13694,43 € $
 
-Aus den NBW-Werten in @Kapitalwertmethode lässt sich ableiten, dass beide Optionen wirtschaftlich attraktiv sind. EMS erzielt mit 13.694,43€ den höheren Kapitalwert gegenüber nVent mit 12.880,36€. Für H4-Module ist die Umstellung auf flexible Schienen damit unter rein finanziellen Gesichtspunkten zu bevorzugen, vorzugsweise mit EMS. Bei Bedarf an Sonderkonstruktionslösungen bleibt nVent aufgrund des Portfolios eine relevante Alternative. Die Ergebnisse sind konsistent mit @Amortisationsdauer und @Rentabilitaet und werden in @QualitativeBewertung um nicht-monetäre Kriterien ergänzt.
+Aus den NBW-Werten in @Kapitalwertmethode lässt sich ableiten, dass beide Optionen wirtschaftlich attraktiv sind. EMS erzielt mit 13694,43 € den höheren Kapitalwert gegenüber nVent mit 12880,36 €. Für H4-Module ist die Umstellung auf flexible Schienen damit unter rein finanziellen Gesichtspunkten zu bevorzugen, vorzugsweise mit EMS. Bei Bedarf an Sonderkonstruktionslösungen bleibt nVent aufgrund des Portfolios eine relevante Alternative. Die Ergebnisse sind konsistent mit @Amortisationsdauer und @Rentabilitaet und werden in @QualitativeBewertung um nicht-monetäre Kriterien ergänzt.
 
 == Qualitative Bewertung <QualitativeBewertung>
+In diesem Kapitel wird die qualitative Bewertung der entwickelten Varianten vorgenommen. Ziel ist es, die Lösungen anhand nachvollziehbarer, nicht-metrischer Kriterien gegenüberzustellen. Die Einschätzungen basieren auf den Anforderungen aus den vorangehenden Kapiteln sowie auf Erfahrungen aus Konstruktion und Prüffeld. Die Ergebnisse dienen als Entscheidungsgrundlage für die nachfolgende quantitative Validierung und die finale Auslegung.
 === Nutzwertanalyse <Nutzwertanalyse>
 Da nicht alle relevanten Aspekte monetär bewertbar sind, wird eine ergänzende qualitative Bewertung durchgeführt. Hierbei kommen Kriterien wie Layout-Flexibilität, Engineeringaufwand, Schulungsaufwand sowie der Montageaufwand zum Tragen. Diese Faktoren werden in einer Nutzwertanalyse (Scoring-Modell) erfasst, bei der zunächst die Kriterien beschrieben, gewichtet und anschließend die Optionen auf einer Skala von 1 bis 4 bewertet werden. 1 = gering, 2 = mittel, 3 = hoch, 4 = sehr hoch. Die Ergebnisse werden in einer Matrix dargestellt, und anschließend die gewichteten Punktwerte berechnet. Diese ergänzende Bewertung ermöglicht eine ganzheitliche Betrachtung der Handlungsoptionen in Bezug auf die qualitativen Aspekte @NutzwertanalyseErklaerungUnda @taschnerBusinessCases2017[Kap.12.4.3].
 === Montage- und Planungsaufwand <MontagePlanungsaufwand>
