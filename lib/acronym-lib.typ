@@ -28,29 +28,34 @@
 
     if is-in-dict("acronyms", acros, acr) {
       let defs = acronyms.at(acr)
-      if type(defs) == "string" {
+      let def-type = type(defs)
+      
+      if def-type == str {
         if plural {
           display("acronyms", acros, acr, defs + "s", link: link)
         } else {
           display("acronyms", acros, acr, defs, link: link)
         }
-      } else if type(defs) == "array" {
+      } else if def-type == array {
         if defs.len() == 0 {
           panic("No definitions found for acronym " + acr + ". Make sure it is defined in the dictionary passed to #init-acronyms(dict)")
-        }
-        if plural {
-          if defs.len() == 1 {
+        } else if defs.len() == 1 {
+          if plural {
             display("acronyms", acros, acr, defs.at(0) + "s", link: link)
-          } else if defs.len() == 2 {
+          } else {
+            display("acronyms", acros, acr, defs.at(0), link: link)
+          }
+        } else if defs.len() == 2 {
+          if plural {
             display("acronyms", acros, acr, defs.at(1), link: link)
           } else {
-            panic("Definitions should be arrays of one or two strings. Definition of " + acr + " is: " + type(defs))
+            display("acronyms", acros, acr, defs.at(0), link: link)
           }
         } else {
-          display("acronyms", acros, acr, defs.at(0), link: link)
+          panic("Definitions should be arrays of one or two strings. Definition of " + acr + " has " + str(defs.len()) + " elements")
         }
       } else {
-        panic("Definitions should be arrays of one or two strings. Definition of " + acr + " is: " + type(defs))
+        panic("Definitions should be strings or arrays. Definition of " + acr + " has type: " + str(def-type))
       }
     }
   }
